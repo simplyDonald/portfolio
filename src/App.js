@@ -4,7 +4,7 @@ import Nav from './components/Nav';
 
 function App() {
   return (
-    <div className="">
+    <div className="container mx-auto">
       {/* <h2>Your portfolio begins here bro</h2>
       <p>Flintstones</p> */}
       <Nav />
