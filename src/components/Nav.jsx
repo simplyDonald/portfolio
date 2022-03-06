@@ -11,7 +11,7 @@ const Nav = () => {
   return (
     <nav className="flex container mx-auto py-4 mt-2 justify-between">
       <div className="">
-        <h1 className="hover:bg-green-700 hover:text-white text-2xl">
+        <h1 className="hover:bg-red-900 hover:text-white text-2xl rounded-tr-full rounded-br-full p-2">
           <a href="#home">Donald</a>
         </h1>
       </div>
