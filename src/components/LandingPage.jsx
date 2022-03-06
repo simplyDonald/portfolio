@@ -1,6 +1,6 @@
 function LandingPage() {
   return (
-    <div className="text-red-700">
+    <div className="text-green-700">
       <span>Donald Abuah.</span>
       <p>FullStack Software Developer</p>
       <p>

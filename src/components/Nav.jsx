@@ -11,7 +11,7 @@ const Nav = () => {
   return (
     <nav className="flex container mx-auto py-4 mt-2 justify-between">
       <div className="">
-        <h1 className="text-4xl hover:bg-blue-700 hover:text-white">
+        <h1 className="hover:bg-green-700 hover:text-white text-2xl">
           <a href="#home">Donald</a>
         </h1>
       </div>
@@ -19,7 +19,7 @@ const Nav = () => {
       <div className="">
         <ul>
           {items.map((item) => (
-            <li className="border-solid border-red-700 hover:text-white hover:bg-red-500 text-red-400 inline-block px-3 py-2 cursor-pointer rounded-full">
+            <li className="border-red-700 hover:text-white hover:bg-red-500 text-red-400 inline-block px-3 py-2 cursor-pointer rounded-full">
               <a key={item.name} href={items.link}>
                 {item.name}
               </a>
