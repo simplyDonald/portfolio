@@ -2,7 +2,7 @@ import Nav from "./Nav";
 
 function LandingPage() {
   return (
-    <div className="text-green-700 m-9 text-center bg">
+    <div className="text-green-700 text-center bg">
       <Nav />
       <span>Donald Abuah.</span>
       <p>FullStack Software Developer</p>

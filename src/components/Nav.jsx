@@ -9,9 +9,9 @@ const Nav = () => {
   
 
   return (
-    <nav className="flex py-4 justify-between">
+    <nav className="flex py-4 justify-between mx-10">
       <div className="">
-        <h1 className="text-2xl p-2 border-solid border-green-800">
+        <h1 className="text-2xl p-2 border border-green-800">
           <a
             href="#home"
             className="text-white"

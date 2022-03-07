@@ -2,11 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* for full page bg-img height */
 body, html {
   height: 100%;
   background-color: #0A192F;
 }
 
+/* for full page bg-img height */
+#root, .app-con, .appsub-con{
+  height: 100%;
+}
+
+/* background img for Landing component */
 .bg{
   width: 100%;
   height: 100%;
@@ -16,6 +23,3 @@ body, html {
   background-size: cover;
 }
 
-#root, .app-con, .appsub-con{
-  height: 100%;
-}

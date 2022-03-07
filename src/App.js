@@ -7,7 +7,6 @@ function App() {
     <div className="app-con">
         <LandingPage />
       <div className='appsub-con container mx-auto'>
-        {/* <Nav /> */}
         
       </div>
     </div>
