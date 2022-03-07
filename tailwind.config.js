@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        body: ["Josefin-Sans"]
+        body: ["Ole"]
       
       }
     },

@@ -6,7 +6,7 @@ function Hero() {
       <Nav />
       <div className="flex flex-col justify-center items-start h-screen pl-64 pb-48">
         <span className="text-sm p-5 pl-0 text-white">Hi, my name is,</span>
-        <p className="text-8xl font-black text-[#6EBD9E]">
+        <p className="text-8xl font-black text-[#6EBD9E] font-body">
           Donald
           <span className="text-[#DEA185] font-body pl-0"> Abuah.</span>{" "}
         </p>
