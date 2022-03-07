@@ -16,6 +16,9 @@ function Hero() {
         <p className="text-[#8892B0] text-4xl font-body pl-0 ">
           I create easy to use web experiences with appealing designs
         </p>
+        <blockquote>
+          ...the universe stands aside for those who know where they are going
+        </blockquote>
       </div>
     </div>
   );
