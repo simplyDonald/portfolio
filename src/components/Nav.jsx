@@ -11,7 +11,7 @@ const Nav = () => {
     <nav className="flex py-4 justify-between mx-10">
       <div className="">
         <h1 className="text-2xl p-2">
-          <a href="#home" className="text-white">
+          <a href="/" className="text-white">
             Donald
           </a>
         </h1>

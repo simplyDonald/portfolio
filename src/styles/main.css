@@ -759,14 +759,14 @@ video {
   font-weight: 900;
 }
 
-.text-green-700{
-  --tw-text-opacity: 1;
-  color: rgba(4, 120, 87, var(--tw-text-opacity));
-}
-
 .text-white{
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.text-green-700{
+  --tw-text-opacity: 1;
+  color: rgba(4, 120, 87, var(--tw-text-opacity));
 }
 
 .text-\[\#6EBD9E\]{
@@ -794,6 +794,7 @@ video {
 body, html {
   height: 100%;
   background-color: #0A192F;
+  scroll-behavior: smooth;
 }
 
 /* for full page bg-img height */
