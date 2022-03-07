@@ -632,6 +632,14 @@ video {
   }
 }
 
+.col-start-4 {
+  grid-column-start: 4;
+}
+
+.col-start-3 {
+  grid-column-start: 3;
+}
+
 .m-9 {
   margin: 2.25rem;
 }
@@ -678,6 +686,18 @@ video {
   margin-right: 1rem;
 }
 
+.ml-36 {
+  margin-left: 9rem;
+}
+
+.ml-48 {
+  margin-left: 12rem;
+}
+
+.ml-60 {
+  margin-left: 15rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -686,12 +706,48 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.justify-self-center {
+  justify-self: center;
 }
 
 .rounded-full {
@@ -729,6 +785,10 @@ video {
   padding: 0.5rem;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -749,13 +809,57 @@ video {
   padding-right: 0.5rem;
 }
 
+.pl-64 {
+  padding-left: 16rem;
+}
+
+.pb-80 {
+  padding-bottom: 20rem;
+}
+
+.pb-64 {
+  padding-bottom: 16rem;
+}
+
+.pb-60 {
+  padding-bottom: 15rem;
+}
+
+.pb-48 {
+  padding-bottom: 12rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-green-700 {
@@ -776,6 +880,16 @@ video {
 .text-\[\#64FFDA\] {
   --tw-text-opacity: 1;
   color: rgba(100, 255, 218, var(--tw-text-opacity));
+}
+
+.text-\[\#8892B0\] {
+  --tw-text-opacity: 1;
+  color: rgba(136, 146, 176, var(--tw-text-opacity));
+}
+
+.text-\[\#DEA185\] {
+  --tw-text-opacity: 1;
+  color: rgba(222, 161, 133, var(--tw-text-opacity));
 }
 
 /* for full page bg-img height */
