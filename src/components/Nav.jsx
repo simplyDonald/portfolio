@@ -9,10 +9,15 @@ const Nav = () => {
   
 
   return (
-    <nav className="flex container mx-auto py-4 justify-between">
+    <nav className="flex py-4 justify-between">
       <div className="">
-        <h1 className="hover:bg-red-900 hover:text-white text-2xl rounded-tr-full rounded-br-full p-2">
-          <a href="#home">Donald</a>
+        <h1 className="text-2xl p-2 border-solid border-green-800">
+          <a
+            href="#home"
+            className="text-white"
+          >
+            Donald
+          </a>
         </h1>
       </div>
 

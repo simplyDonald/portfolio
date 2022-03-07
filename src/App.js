@@ -4,24 +4,11 @@ import Nav from './components/Nav';
 
 function App() {
   return (
-    <div className="">
-      <div className='container mx-auto'>
-        <Nav />
+    <div className="app-con">
         <LandingPage />
-        <LandingPage />
-        <LandingPage />
-        <LandingPage />
-        <LandingPage />
-        <LandingPage />
-        <LandingPage />
-        <LandingPage />
-        <LandingPage />
-        <LandingPage />
-        <LandingPage />
-        <LandingPage />
-        <LandingPage />
-        <LandingPage />
-
+      <div className='appsub-con container mx-auto'>
+        {/* <Nav /> */}
+        
       </div>
     </div>
   );
