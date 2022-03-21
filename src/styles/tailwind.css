@@ -1,12 +1,12 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;1,400;1,600;1,700&family=Ole&family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* for full page bg-img height */
-body, html {
+body, html {https://resume.io/r/dAzgD3MkP
   height: 100%;
   background-color: #0A192F;
   scroll-behavior: smooth;
