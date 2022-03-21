@@ -377,7 +377,7 @@ ul {
  */
 
 html {
-  font-family: 'Expletus Sans';
+  font-family: 'Expletus Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 1 */
   line-height: 1.5;
   /* 2 */
@@ -648,6 +648,10 @@ video {
   margin-right: 2.5rem;
 }
 
+.mt-3{
+  margin-top: 0.75rem;
+}
+
 .inline-block{
   display: inline-block;
 }
@@ -728,8 +732,16 @@ video {
   padding-left: 0px;
 }
 
+.pl-1{
+  padding-left: 0.25rem;
+}
+
+.pl-2{
+  padding-left: 0.5rem;
+}
+
 .font-sans{
-  font-family: 'Expletus Sans';
+  font-family: 'Expletus Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .font-body{
@@ -824,7 +836,6 @@ body, html {
 .msg1{
   max-width: 50%;
   line-height: 1.5rem;
-  margin-top: 1.5rem;
 }
 
 .hover\:bg-\[\#0c5745\]:hover{

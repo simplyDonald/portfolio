@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   mode: "jit",
   purge: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx}"],
@@ -5,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["'Expletus Sans'"],
+        sans: ["'Expletus Sans'", ...defaultTheme.fontFamily.sans],
         body: ["Hind"]
       
       }
