@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;600&family=Montserrat:wght@300;600&family=Nunito:ital,wght@0,400;1,200&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,500;0,600;1,500;1,700&display=swap');
+
 /* ! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -375,7 +377,7 @@ ul {
  */
 
 html {
-  font-family: Hind;
+  font-family: 'Expletus Sans';
   /* 1 */
   line-height: 1.5;
   /* 2 */
@@ -727,6 +729,10 @@ video {
 }
 
 .font-sans{
+  font-family: 'Expletus Sans';
+}
+
+.font-body{
   font-family: Hind;
 }
 
@@ -769,14 +775,14 @@ video {
   color: rgba(4, 120, 87, var(--tw-text-opacity));
 }
 
-.text-\[\#6EBD9E\]{
-  --tw-text-opacity: 1;
-  color: rgba(110, 189, 158, var(--tw-text-opacity));
-}
-
 .text-\[\#FFD700\]{
   --tw-text-opacity: 1;
   color: rgba(255, 215, 0, var(--tw-text-opacity));
+}
+
+.text-\[\#6EBD9E\]{
+  --tw-text-opacity: 1;
+  color: rgba(110, 189, 158, var(--tw-text-opacity));
 }
 
 .text-\[\#d8f3dc\]{

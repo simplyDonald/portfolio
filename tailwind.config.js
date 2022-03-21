@@ -5,9 +5,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Hind"],
-        new: ["Nunito"],
-        popo: ["MontserratAlternates"]
+        sans: ["'Expletus Sans'"],
+        body: ["Hind"]
       
       }
     },

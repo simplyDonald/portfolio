@@ -12,14 +12,10 @@ function Hero() {
           Donald
           <span className="text-[#FFD700] y pl-0 font-sans"> Abuah.</span>{" "}
         </p>
-        <p className="text-white text-3xl pl-o ">
-          FullStack Software Developer
-        </p>
-        <p className="text-[#d8f3dc] text-xl pl-0 msg1">
+        <p className="text-white text-3xl pl-0 font-body">FullStack Software Developer</p>
+        <p className="text-[#d8f3dc] text-xl pl-0 msg1 font-body">
           I’m a software developer specializing in creating easy to use web
-          experiences with intercative and appealing design. <br /> Currently,
-          I’m focused on building accessible, human-centered products at
-          Upstatement.
+          experiences with intercative and appealing design. 
         </p>
         <blockquote className="text-[#d8f3dc]">
           ...the universe stands aside for those who know where they are going
