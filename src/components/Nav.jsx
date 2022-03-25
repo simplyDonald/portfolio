@@ -2,7 +2,7 @@ const Nav = () => {
   // object for nav links
   const items = [
     { name: "About", link: "#about" },
-    { name: "Projects", link: "#work" },
+    { name: "Projects", link: "#projects" },
     { name: "TechStack", link: "#tech" }
   ];
   

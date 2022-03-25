@@ -11,7 +11,7 @@ function About() {
       </blockquote>
       <h2 className="stroke text-3xl m-8">About Me</h2>
 
-      <div className="grid grid-cols-2 gap-36 mx-8 leading-5">
+      <div className="grid grid-cols-2 gap-36 mx-8 leading-5 font-body">
         <div className="">
           <p className="mb-3">
             Hello! My name is Donald and I enjoy creating things that live on
