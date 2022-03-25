@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="app-con">
         <Hero />
-      <div className='appsub-con text-white mx-auto flex my-6 max-w-4xl border border-red-600'>
+      <div className='.appsub-con text-white mx-auto flex my-6 max-w-4xl border border-red-600'>
         <About />
       </div>
     </div>

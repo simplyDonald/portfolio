@@ -618,9 +618,18 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mx-3{
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .mx-10{
   margin-left: 2.5rem;
   margin-right: 2.5rem;
+}
+
+.mb-3{
+  margin-bottom: 0.75rem;
 }
 
 .mt-3{
@@ -635,12 +644,24 @@ video {
   display: flex;
 }
 
+.grid{
+  display: grid;
+}
+
 .h-screen{
   height: 100vh;
 }
 
+.max-h-full{
+  max-height: 100%;
+}
+
 .max-w-4xl{
   max-width: 56rem;
+}
+
+.max-w-sm{
+  max-width: 24rem;
 }
 
 .max-w-lg{
@@ -653,6 +674,10 @@ video {
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -669,6 +694,18 @@ video {
 
 .justify-between{
   justify-content: space-between;
+}
+
+.gap-36{
+  gap: 9rem;
+}
+
+.self-center{
+  align-self: center;
+}
+
+.justify-self-center{
+  justify-self: center;
 }
 
 .rounded{
@@ -695,6 +732,11 @@ video {
 
 .p-2{
   padding: 0.5rem;
+}
+
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .py-4{
@@ -728,17 +770,22 @@ video {
   padding-left: 0px;
 }
 
-.font-sans{
-  font-family: 'Expletus Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 .font-body{
   font-family: Hind;
+}
+
+.font-sans{
+  font-family: 'Expletus Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-sm{
@@ -749,11 +796,6 @@ video {
 .text-8xl{
   font-size: 6rem;
   line-height: 1;
-}
-
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .text-2xl{
@@ -773,6 +815,10 @@ video {
   font-style: italic;
 }
 
+.leading-5{
+  line-height: 1.25rem;
+}
+
 .leading-6{
   line-height: 1.5rem;
 }
@@ -780,6 +826,11 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.text-\[\#8892B0\]{
+  --tw-text-opacity: 1;
+  color: rgba(136, 146, 176, var(--tw-text-opacity));
 }
 
 .text-green-700{
@@ -817,7 +868,7 @@ body, html {
 
 /* for full page bg-img height */
 
-#root, .app-con, .appsub-con{
+#root, .app-con, .app-subcon{
   height: 100%;
 }
 
@@ -850,6 +901,10 @@ body, html {
   --tw-bg-opacity: 1;
   background-color: rgba(35, 53, 84, var(--tw-bg-opacity));
   content: '';
+}
+
+.before\:content-\[\'-\'\]::before{
+  content: '-';
 }
 
 .hover\:bg-\[\#0c5745\]:hover{
