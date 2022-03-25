@@ -18,7 +18,6 @@ const Projects = () => {
         aperiam doloribus eveniet sunt similique reprehenderit eos cupiditate
         repudiandae voluptatem.
       </p>
-     
     </div>
   );
 }
