@@ -864,7 +864,7 @@ body, html {
 
 /* for full page bg-img height */
 
-#root, .app-con{
+#root{
   height: 100%;
 }
 
