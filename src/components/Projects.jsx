@@ -1,9 +1,6 @@
 const Projects = () => {
   return (
-    <div
-      id="projects"
-      className="h-full text-white max-w-4xl border border-green-500 mx-auto"
-    >
+    <div id="projects" className="border border-green-500 h-full mt-5 ">
       <h2 className="stroke text-3xl m-8">Some things I've built</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ea,

@@ -7,10 +7,10 @@ function App() {
   return (
     <div className="h-full">
       <Hero />
-      <div className="h-full text-white mx-auto flex my-6 max-w-4xl border border-red-600">
+      <div className="h-full text-white mx-auto  my-6 max-w-4xl border border-red-600">
         <About />
-      </div>
       <Projects />
+      </div>
     </div>
   );
 }

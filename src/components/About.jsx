@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div id="about" className=" grid ">
+    <div id="about" className=" grid h-full ">
       <blockquote className=" py-20 max-w-sm text-3xl justify-self-center font-body text-[#8892B0]">
         "Don't give in to your fears... If you do, you won't be able to talk to
         your heart"
