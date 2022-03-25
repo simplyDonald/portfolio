@@ -19,9 +19,7 @@ function Hero() {
           I’m a software developer specializing in creating easy to use web
           experiences with engaging and appealing designs.
         </p>
-        <blockquote className="text-[#d8f3dc] mt-3 max-w-xs">
-          ...the universe stands aside for those who know where they are going
-        </blockquote>
+      
       </div>
     </div>
   );

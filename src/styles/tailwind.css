@@ -13,7 +13,7 @@ body, html {
 }
 
 /* for full page bg-img height */
-#root, .app-con, .app-subcon{
+#root, .app-con{
   height: 100%;
 }
 

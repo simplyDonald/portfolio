@@ -1,19 +1,19 @@
 function About() {
   return (
     <div id="about" className=" grid ">
-      <p className=" py-20 max-w-sm text-3xl justify-self-center font-body text-[#8892B0]">
-        "So, I love you because the entire universe conspired to help me find
-        you."
+      <blockquote className=" py-20 max-w-sm text-3xl justify-self-center font-body text-[#8892B0]">
+        "Don't give in to your fears... If you do, you won't be able to talk to
+        your heart"
         <p className=" text-base ">
           <cite className=" before:content-['-']">The Alchemist</cite> by Paulo
           Coelho
         </p>
-      </p>
+      </blockquote>
       <h2 className="stroke text-3xl m-8">About Me</h2>
 
-      <div className="grid grid-cols-2 gap-36 mx-3 leading-5">
-        <div>
-          <p className=" mb-3">
+      <div className="grid grid-cols-2 gap-36 mx-8 leading-5">
+        <div className="">
+          <p className="mb-3">
             Hello! My name is Donald and I enjoy creating things that live on
             the internet. My interest in web development started back in 2012
             when I decided to try editing custom Tumblr themes — turns out
