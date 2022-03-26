@@ -1,16 +1,20 @@
 const Projects = () => {
   return (
-    <div id="projects" className="border border-green-500 h-full mt-5 ">
+    <div id="projects" className="h-full mt-5 ">
       <h2 className="stroke text-3xl m-8">Some things I've built</h2>
-      <div className="relative flex border border-gray-500 h-96">
+      <div className="relative flex mb-4 h-96">
         <div className="border border-blue-700 w-8/12 h-80 text-center self-start">
-          <img src="tweeter_snap1.png" alt="" />
+          <img
+            src="tweeter_snap1.png"
+            alt="project screenshot"
+            className="fofo hover:filter-none transition ease-out delay-700 hover:cursor-pointer"
+          />
         </div>
-        <div className="border border-orange-300 w-2/4 h-max absolute font-body right-14 grid grid-cols-1">
+        <div className="w-2/4 h-max absolute font-body right-14 grid grid-cols-1">
           <h2 className=" mt-2 text-sm text-[#64FFDA] justify-self-end">
             Featured Project
           </h2>
-          <h3 className="text-xl justify-self-end">Tweeter</h3>
+          <h3 className="text-xl justify-self-end text-[#FFD700]">Tweeter</h3>
           <p className=" leading-4 m-5 bg-[#112240] text-left p-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
             aliquam hic dolor vel placeat quibusdam eveniet nostrum, consequatur
