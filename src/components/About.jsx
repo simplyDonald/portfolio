@@ -30,13 +30,13 @@ function About() {
             TypeScript React Eleventy Node.js WordPress
           </p>
         </div>
-        <div className=" self-center ">
+        <div className=" self-center"> 
           <img
-            className="fofo hover:filter-none transition ease-out delay-700"
+            className="fofo hover:filter-none transition ease-out delay-700 hover:cursor-pointer"
             src="gitpicnice.jpg"
             alt="donald_profile_pic"
             width="290"
-            height="290"
+            height="290"                                                  
           />
         </div>
       </div>
