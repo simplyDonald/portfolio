@@ -2,8 +2,8 @@ function About() {
   return (
     <div id="about" className=" grid h-full ">
       <blockquote className=" py-20 max-w-sm text-3xl justify-self-center font-body text-[#8892B0]">
-        "Don't give in to your fears... If you do, you won't be able to talk to
-        your heart"
+        "When you want something, all the universe conspires in helping you to
+        achieve it."
         <p className=" text-base ">
           <cite className=" before:content-['-']">The Alchemist</cite> by Paulo
           Coelho
@@ -32,7 +32,7 @@ function About() {
         </div>
         <div className=" self-center ">
           <img
-            className=""
+            className="fofo hover:filter-none transition ease-out delay-700"
             src="gitpicnice.jpg"
             alt="donald_profile_pic"
             width="290"
