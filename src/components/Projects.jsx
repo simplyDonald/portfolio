@@ -3,8 +3,8 @@ const Projects = () => {
     <div id="projects" className="border border-green-500 h-full mt-5 ">
       <h2 className="stroke text-3xl m-8">Some things I've built</h2>
       <div className="relative flex border border-gray-500 h-96">
-        <div className="border border-blue-700 w-8/12 h-12 text-center self-start">
-          first content goes Here lorem
+        <div className="border border-blue-700 w-8/12 h-80 text-center self-start">
+          <img src="tweeter_snap1.png" alt="" />
         </div>
         <div className="border border-orange-300 w-2/4 h-max absolute font-body right-14 grid grid-cols-1">
           <h2 className=" mt-2 text-sm text-[#64FFDA] justify-self-end">
@@ -23,12 +23,14 @@ const Projects = () => {
             <li className=" inline-block">techStack3</li>
           </ul>
           <a
-            href="https://www.flaticon.com/free-icons/github"
+            href="https://github.com/simplyDonald/tweeter"
+            rel="noreferrer"
             className="justify-self-end mr-4"
+            target="_blank"
           >
             <img
               className="invert pb-1"
-              src="github (1).png"
+              src="github-icon.png"
               alt="Github icons created by Pixel perfect - Flaticon"
               width="20"
               heigth="20"

@@ -20,8 +20,11 @@ const Nav = () => {
       <div className="">
         <ul className="">
           {items.map((item) => (
-            <li className="hover:text-[#64FFDA] text-white inline-block px-3 py-2 cursor-pointer">
-              <a key={item.name} href={item.link}>
+            <li
+              key={item.name}
+              className="hover:text-[#64FFDA] text-white inline-block px-3 py-2 cursor-pointer"
+            >
+              <a href={item.link}>
                 {item.name}
               </a>
             </li>
