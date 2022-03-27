@@ -718,6 +718,10 @@ video {
   width: 50%;
 }
 
+.w-6\/12{
+  width: 50%;
+}
+
 .max-w-4xl{
   max-width: 56rem;
 }
