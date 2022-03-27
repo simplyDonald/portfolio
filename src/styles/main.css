@@ -694,6 +694,10 @@ video {
   margin-top: 0px;
 }
 
+.ml-5{
+  margin-left: 1.25rem;
+}
+
 .inline-block{
   display: inline-block;
 }
@@ -772,6 +776,10 @@ video {
 
 .grid-cols-4{
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-6{
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .flex-col{

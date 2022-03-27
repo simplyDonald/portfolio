@@ -15,16 +15,15 @@ const TechStack = () => {
       <p className="font-body mt-2 text-center text-[#64FFDA]">
         I try to learn constantly and I've enjoyed working with these so far
       </p>
-
-      <div className="grid grid-cols-4">
-        <ul>
+      <ul>
+        <div className="grid grid-cols-6 text-center">
           {frameworks.map((item) => (
             <li key={item.name} className="">
               {item.name}
             </li>
           ))}
-        </ul>
-      </div>
+        </div>
+      </ul>
     </div>
   );
 }
