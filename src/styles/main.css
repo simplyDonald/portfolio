@@ -800,6 +800,11 @@ video {
   border-color: rgba(100, 255, 218, var(--tw-border-opacity));
 }
 
+.border-purple-400{
+  --tw-border-opacity: 1;
+  border-color: rgba(167, 139, 250, var(--tw-border-opacity));
+}
+
 .bg-\[\#112240\]{
   --tw-bg-opacity: 1;
   background-color: rgba(17, 34, 64, var(--tw-bg-opacity));
@@ -1069,4 +1074,10 @@ body, html {
 .hover\:filter-none:hover{
   -webkit-filter: none;
           filter: none;
+}
+
+@media (min-width: 768px){
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }

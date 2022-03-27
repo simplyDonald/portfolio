@@ -2,6 +2,7 @@ import './App.css';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from 'components/Projects';
+import TechStack from 'components/TechStack';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className="h-full text-white mx-auto  my-6 max-w-4xl border border-red-600">
         <About />
         <Projects />
+        <TechStack />
       </div>
     </div>
   );

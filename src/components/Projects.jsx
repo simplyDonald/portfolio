@@ -5,7 +5,6 @@ import { techStack } from "techStack";
 
   function Projects() {
     useEffect(() => {
-      console.log("logging techStack", techStack);
     }, []);
 
     const projects = techStack.map((item)=>{
@@ -51,7 +50,7 @@ import { techStack } from "techStack";
     })
 
     return (
-      <div id="projects" className="h-full mt-5 ">
+      <div id="projects" className="h-max mt-5">
         <h2 className="stroke text-3xl m-8">Some things I've built</h2>
         {projects}
       </div>

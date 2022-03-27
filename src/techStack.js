@@ -9,14 +9,14 @@ export const techStack =[
   },
   {
     name: "Interview Scheduler",
-    stack: ["React","SASS", "Axios", "Node.js", "Express", "PostgreSQL"],
+    stack: ["React","SASS", "Axios", "Node", "Express", "PostgreSQL"],
     github:"https://github.com/simplyDonald/scheduler",
     desc: "A Web App for students to book appointments with Mentors. They can edit, create and cancel scheduled appointments.",
     img: "scheduler.png"
   },
   {
     name: "Smart To-Do List",
-    stack: ["HTML", "CSS", " Vanilla JS", "jQuery", "AJAX", "Node", "Express", "PostgresSQL", "Bootstrap"],
+    stack: ["HTML", "CSS", "JS", "jQuery", "AJAX", "Node", "Express", "PostgreSQL", "Bootstrap"],
     github:"https://github.com/simplyDonald/midterm-smartToDoList",
     desc: "An application built with Node and Express that allows users to create to-do items and have them auto-categorized into four categories",
     img: "smart-todo-list.png"
