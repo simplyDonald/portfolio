@@ -9,10 +9,10 @@ function About() {
           Coelho
         </p>
       </blockquote>
-      <h2 className="stroke text-3xl m-8">About Me</h2>
+      <h2 className=" h-max stroke text-3xl mt-8 ml-8">About Me</h2>
 
       <div className="grid grid-cols-2 gap-36 mx-8 leading-5 font-body">
-        <div className="">
+        <div>
           <p className="mb-3">
             Hello! My name is Donald and I enjoy creating things that live on
             the internet. My interest in web development started back in 2012
@@ -30,13 +30,13 @@ function About() {
             TypeScript React Eleventy Node.js WordPress
           </p>
         </div>
-        <div className=" self-center"> 
+        <div className=" self-center">
           <img
             className="fofo hover:filter-none transition ease-out delay-700 hover:cursor-pointer"
             src="gitpicnice.jpg"
             alt="donald_profile_pic"
             width="290"
-            height="290"                                                  
+            height="290"
           />
         </div>
       </div>
