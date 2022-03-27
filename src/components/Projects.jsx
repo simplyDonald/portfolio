@@ -17,7 +17,7 @@ import { techStack } from "techStack";
               alt={`Screenshot of ${item.name}`}
               className="fofo hover:filter-none transition ease-out delay-700 hover:cursor-pointer"
             />
-            {/* gap */}
+
             <div className="w-2/4 h-max absolute font-body right-14 grid grid-cols-1">
               <h2 className=" mt-2 text-sm text-[#64FFDA] justify-self-end">
                 Featured Project
@@ -28,10 +28,14 @@ import { techStack } from "techStack";
               <p className=" leading-4 m-5 bg-[#112240] text-left p-6">
                 {item.desc}
               </p>
+              {/* continue here */}
               <ul className=" py-6 justify-self-end text-xs text-[#8892B0] mr-4">
-                <li className=" inline-block mr-2">techStack1</li>
+                {item.stack.map((stk)=>{
+                  return <li className=" inline-block mr-2">{stk}</li>;
+                })}
+                {/* <li className=" inline-block mr-2">techStack1</li>
                 <li className=" inline-block">techStack2</li>
-                <li className=" inline-block">techStack3</li>
+                <li className=" inline-block">techStack3</li> */}
               </ul>
               <a
                 href={item.github}
@@ -57,7 +61,7 @@ import { techStack } from "techStack";
       <div id="projects" className="h-full mt-5 ">
         <h2 className="stroke text-3xl m-8">Some things I've built</h2>
 
-        <div className="relative flex mb-4 h-96">
+        {/* <div className="relative flex mb-4 h-96">
           <div className="w-8/12 h-80 text-center self-start">
             <img
               src="tweeter.png"
@@ -95,7 +99,8 @@ import { techStack } from "techStack";
                 heigth="20" />
             </a>
           </div>
-        </div>
+        </div> */}
+        {projects}
       </div>
     );
   }
