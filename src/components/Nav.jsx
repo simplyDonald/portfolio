@@ -10,11 +10,7 @@ const Nav = () => {
   return (
     <nav className="flex py-4 justify-between mx-10">
       <div className="">
-        <h1 className="text-2xl p-2">
-          <a href="/" className="text-white">
-            Donald
-          </a>
-        </h1>
+        <img src="hero-logo.png" alt="diamond logo" className=" w-20 h-20 p-2 invert rotate-12" />
       </div>
 
       <div className="">
@@ -24,9 +20,7 @@ const Nav = () => {
               key={item.name}
               className="hover:text-[#64FFDA] text-white inline-block px-3 py-2 cursor-pointer"
             >
-              <a href={item.link}>
-                {item.name}
-              </a>
+              <a href={item.link}>{item.name}</a>
             </li>
           ))}
           <li className="border border-[#64FFDA]   hover:bg-[#0c5745] text-[#64FFDA] inline-block px-3 py-2 cursor-pointer rounded">
