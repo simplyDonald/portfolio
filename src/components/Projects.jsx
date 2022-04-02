@@ -6,7 +6,10 @@ function Projects() {
 
   const projects = techStack.map((item) => {
     return (
-      <div key={item.name} className="relative flex mb-4 h-96">
+      <div
+        key={item.name}
+        className="relative  mb-4 h-96 border-2 border-red-500 grid"
+      >
         <div className="w-6/12 h-80 text-center self-start">
           <img
             src={item.img}
@@ -15,7 +18,7 @@ function Projects() {
           />
         </div>
 
-        <div className="w-2/4 h-max absolute font-body right-14 grid grid-cols-1">
+        <div className="w-2/4 h-max absolute font-body  grid grid-cols-1 lg:right-14">
           <h2 className=" mt-2 text-sm text-[#64FFDA] justify-self-end">
             Featured Project
           </h2>
