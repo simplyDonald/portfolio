@@ -1,8 +1,6 @@
-import { useEffect } from "react";
 import { techStack } from "techStack";
 
 function Projects() {
-  useEffect(() => {}, []);
 
   const projects = techStack.map((item) => {
     return (
