@@ -658,6 +658,11 @@ video {
   margin-right: 2.5rem;
 }
 
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .mt-8{
   margin-top: 2rem;
 }
@@ -692,6 +697,18 @@ video {
 
 .mt-5{
   margin-top: 1.25rem;
+}
+
+.mb-8{
+  margin-bottom: 2rem;
+}
+
+.mb-14{
+  margin-bottom: 3.5rem;
+}
+
+.mb-48{
+  margin-bottom: 12rem;
 }
 
 .inline-block{
@@ -796,12 +813,24 @@ video {
   justify-content: space-between;
 }
 
+.justify-items-end{
+  justify-items: end;
+}
+
 .justify-items-center{
   justify-items: center;
 }
 
 .gap-36{
   gap: 9rem;
+}
+
+.gap-14{
+  gap: 3.5rem;
+}
+
+.place-self-center{
+  place-self: center;
 }
 
 .self-center{
@@ -1135,6 +1164,18 @@ body, html {
 
   .lg\:grid-cols-6{
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:text-left{
+    text-align: left;
+  }
+
+  .lg\:text-right{
+    text-align: right;
   }
 
   .lg\:opacity-100{

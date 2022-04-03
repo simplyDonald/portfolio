@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="h-full">
       <Hero />
-      <div className="h-full text-white mx-auto  my-6 max-w-4xl border border-red-600">
+      <div className="h-max text-white mx-auto  my-6 max-w-4xl border border-red-600">
         <About />
         <Projects />
         <TechStack />
