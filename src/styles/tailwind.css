@@ -43,10 +43,6 @@ body, html {
 
 }
 
-#title{
-  @apply background-color: aqua;
-}
-
 .picto{
   filter: url(#teal-white);
 }
