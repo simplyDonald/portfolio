@@ -8,9 +8,9 @@ function Projects() {
     return (
       <div
         key={item.name}
-        className="relative  mb-4 h-96 border-2 border-red-500 grid"
+        className="relative flex mb-4 h-96 border-2 border-red-500"
       >
-        <div className="w-6/12 h-80 text-center self-start">
+        <div className="w-6/12 h-80 text-center opacity-25 lg:opacity-100">
           <img
             src={item.img}
             alt={`screenshot of ${item.name} page`}
@@ -18,8 +18,8 @@ function Projects() {
           />
         </div>
 
-        <div className="w-2/4 h-max absolute font-body  grid grid-cols-1 lg:right-14">
-          <h2 className=" mt-2 text-sm text-[#64FFDA] justify-self-end">
+        <div className="w-2/4 h-max font-body  grid grid-cols-1 lg:right-14 absolute  ">
+          <h2 className=" mt-2 text-sm text-[#64FFDA] justify-self-end title">
             Featured Project
           </h2>
           <h3 className="text-xl justify-self-end text-[#FFD700]">
@@ -68,7 +68,7 @@ function Projects() {
             height="120%"
             filterUnits="objectBoundingBox"
             primitiveUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
             <feColorMatrix
               type="matrix"
