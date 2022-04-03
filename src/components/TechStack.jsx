@@ -16,10 +16,11 @@ const TechStack = () => {
         I try to learn constantly and I've enjoyed working with these so far
       </p>
       <ul>
-        <div className=" gap-4 grid grid-cols-6 text-center mt-8">
+        <div className="grid grid-cols-2 text-center mt-8 justify-items-center lg:grid-cols-6">
           {frameworks.map((item) => (
-            <li key={item.name} className="border w-10 h-10 mx-auto">
+            <li key={item.name} className=" w-10 m-8">
               {item.name}
+              <img src={item.img} alt="" />
             </li>
           ))}
         </div>

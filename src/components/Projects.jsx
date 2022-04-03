@@ -8,7 +8,7 @@ function Projects() {
     return (
       <div
         key={item.name}
-        className="relative flex mb-4 h-96 border-2 border-red-500"
+        className="relative flex mb-4 h-96"
       >
         <div className="w-6/12 h-80 text-center opacity-25 lg:opacity-100">
           <img

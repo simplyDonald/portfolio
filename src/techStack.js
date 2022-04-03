@@ -51,30 +51,50 @@ export const techStack = [
 export const frameworks = [
   {
     name: "Javascript",
-    img: ""
+    img: "/devlogo/js.png"
   },
   {
     name: "Python",
-    img: ""
+    img: "devlogo/python.png"
   },
   {
-    name: "Ruby",
-    img: ""
+    name: "Rails",
+    img: "devlogo/ruby-on-rails.png"
+  },
+  {
+    name: "React",
+    img: "devlogo/react.png"  
+  },
+  {
+    name: "Redux",
+    img: "devlogo/redux.png"
   },
   {
     name: "PostgreSQL",
-    img: ""
+    img: "devlogo/postgre.png"
   },
   {
     name: "Jest",
-    img: ""
+    img: "devlogo/jest.png"
   },
   {
     name: "Sass",
-    img: ""
+    img: "devlogo/sass.png"
   },
   {
-    name: "Express",
-    img: ""
+    name: "Node.js",
+    img: "devlogo/nodejs.png"
+  },
+  {
+    name: "Git",
+    img: "devlogo/git-icon.png"
+  },
+   {
+    name: "Storybook",
+    img: "devlogo/storybook-icon.png"                                             
+  },
+  {
+    name: "Tailwind",
+    img: "devlogo/tailwind-css-icon.png"                                             
   }
 ];
