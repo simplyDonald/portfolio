@@ -6,7 +6,7 @@ function Projects() {
     return (
       <div
         key={item.name}
-        className="relative flex mb-4 h-96"
+        className="relative flex mb-4 h-max"
       >
         <div className="w-6/12 h-80 text-center opacity-25 lg:opacity-100">
           <img
@@ -53,7 +53,7 @@ function Projects() {
   });
 
   return (
-    <div id="projects" className="h-max mt-5">
+    <div id="projects" className="h-max mb-48">
       <h2 className="stroke text-3xl m-8">Some things I've built</h2>
       {projects}
       

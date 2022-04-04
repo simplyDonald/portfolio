@@ -4,7 +4,7 @@ const Nav = () => {
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
     { name: "TechStack", link: "#tech" },
-    { name: "Contact", link: "#contact" },
+    { name: "Contact", link: "#contact" }
   ];
   
 
