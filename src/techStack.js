@@ -98,3 +98,11 @@ export const frameworks = [
     img: "devlogo/tailwind-css-icon.png"                                             
   }
 ];
+
+
+export const socials = [
+  {},
+  {},
+  {},
+  {}
+];

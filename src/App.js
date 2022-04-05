@@ -7,13 +7,21 @@ import Contact from 'components/Contact';
 
 function App() {
   return (
-    <div className="h-full">
+    <div className="h-full relative">
       <Hero />
       <div className="h-max text-white mx-auto  my-6 max-w-4xl border border-red-600">
         <About />
         <Projects />
         <TechStack />
         <Contact />
+      </div>
+      <div className='hidden fixed bottom-0 lg:block left-4  text-white'>
+        hahaha
+      </div>
+      <div className=' hidden hover:text-[#64FFDA] cursor-pointer stroke2 fixed font-body -bottom-10 lg:block right-4 m-8 origin-bottom-right p-2 rotate-90  text-[#8892B0] text-sm transition ease-in duration-300'>
+        <a  rel="noreferrer"
+        href="mailto:donaldabuah@gmail.com?subject=Hi Donald"
+        target="_blank">donaldabuah@gmail.com</a> 
       </div>
     </div>
   );

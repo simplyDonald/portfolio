@@ -43,6 +43,6 @@ body, html {
 
 }
 
-.picto{
-  filter: url(#teal-white);
+.stroke2{
+  @apply after:content-[''] after:inline-block after:w-14 after:h-px after:relative after:-top-1.5 after:ml-5 after:bg-[#a8b2d1] 
 }
