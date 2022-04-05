@@ -6,7 +6,7 @@ function Projects() {
     return (
       <div
         key={item.name}
-        className="relative flex mb-4 h-max"
+        className="relative flex mb-4 h-max border justify-center lg:justify-start"
       >
         <div className="w-6/12 h-80 text-center opacity-25 lg:opacity-100">
           <img

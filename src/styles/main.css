@@ -840,6 +840,11 @@ video {
   border-color: rgba(252, 165, 165, var(--tw-border-opacity));
 }
 
+.border-yellow-700{
+  --tw-border-opacity: 1;
+  border-color: rgba(180, 83, 9, var(--tw-border-opacity));
+}
+
 .bg-\[\#112240\]{
   --tw-bg-opacity: 1;
   background-color: rgba(17, 34, 64, var(--tw-bg-opacity));
@@ -1149,6 +1154,10 @@ body, html {
 
   .lg\:grid-cols-6{
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .lg\:justify-start{
+    justify-content: flex-start;
   }
 
   .lg\:opacity-100{
