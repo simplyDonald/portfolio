@@ -1224,6 +1224,11 @@ body, html {
   color: rgba(220, 38, 38, var(--tw-text-opacity));
 }
 
+.hover\:filter:hover{
+  -webkit-filter: var(--tw-filter);
+          filter: var(--tw-filter);
+}
+
 .hover\:filter-none:hover{
   -webkit-filter: none;
           filter: none;

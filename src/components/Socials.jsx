@@ -11,7 +11,7 @@ const Socials = () => {
             key={item.name}
             className="invert w-5 m-1 list-none inline-block"
           >
-            <a href={item.link} rel="noreferrer" target="_blank" className="">
+            <a href={item.link} rel="noreferrer" target="_blank" className=" ">
               <img src={item.img} alt="socials icon" className="" />
             </a>
           </li>
