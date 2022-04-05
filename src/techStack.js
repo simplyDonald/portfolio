@@ -101,8 +101,20 @@ export const frameworks = [
 
 
 export const socials = [
-  {},
-  {},
-  {},
-  {}
+  {
+    name: "github",
+    img: "socialsIcon/github.svg"   
+  },
+  {
+    name: "linkedin",
+    img: "socialsIcon/linkedin.svg"   
+  },
+  {
+    name: "twitter",
+    img: "socialsIcon/twitter.svg"   
+  },
+  {
+    name: "Instagram",
+    img: "socialsIcon/instagram.svg"   
+  }
 ];

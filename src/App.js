@@ -4,6 +4,7 @@ import About from './components/About';
 import Projects from 'components/Projects';
 import TechStack from 'components/TechStack';
 import Contact from 'components/Contact';
+import Socials from 'components/Socials';
 
 function App() {
   return (
@@ -15,9 +16,7 @@ function App() {
         <TechStack />
         <Contact />
       </div>
-      <div className='hidden fixed bottom-0 lg:block left-4  text-white'>
-        hahaha
-      </div>
+      <Socials />
       <div className=' hidden hover:text-[#64FFDA] cursor-pointer stroke2 fixed font-body -bottom-10 lg:block right-4 m-8 origin-bottom-right p-2 rotate-90  text-[#8892B0] text-sm transition ease-in duration-300'>
         <a  rel="noreferrer"
         href="mailto:donaldabuah@gmail.com?subject=Hi Donald"

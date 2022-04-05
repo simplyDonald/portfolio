@@ -779,6 +779,14 @@ video {
   width: 2.5rem;
 }
 
+.w-4{
+  width: 1rem;
+}
+
+.w-5{
+  width: 1.25rem;
+}
+
 .max-w-4xl{
   max-width: 56rem;
 }
@@ -810,6 +818,10 @@ video {
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.list-none{
+  list-style-type: none;
 }
 
 .grid-cols-1{
@@ -1065,6 +1077,11 @@ video {
 
 .invert{
   --tw-invert: invert(100%);
+  -webkit-filter: var(--tw-filter);
+          filter: var(--tw-filter);
+}
+
+.filter{
   -webkit-filter: var(--tw-filter);
           filter: var(--tw-filter);
 }
