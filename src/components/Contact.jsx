@@ -24,7 +24,7 @@ const Contact = () => {
         </span>
       </p>
       <a
-        className="border border-[#64FFDA]   hover:bg-[#0c5745] text-[#64FFDA] inline-block px-3 max-w-sm py-2 cursor-pointer mt-8 rounded tracking-wide"
+        className="border border-[#64FFDA]   hover:bg-[#0c5745] text-[#64FFDA] inline-block px-3 max-w-sm py-2 cursor-pointer mt-8 rounded tracking-wide transition ease-in duration-300"
         rel="noreferrer"
         href="mailto:donaldabuah@gmail.com?subject=Hi Donald"
         target="_blank"
