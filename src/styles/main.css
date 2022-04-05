@@ -912,6 +912,14 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.pl-32{
+  padding-left: 8rem;
+}
+
+.pl-20{
+  padding-left: 5rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -1158,6 +1166,10 @@ body, html {
 
   .lg\:justify-start{
     justify-content: flex-start;
+  }
+
+  .lg\:pl-64{
+    padding-left: 16rem;
   }
 
   .lg\:opacity-100{
