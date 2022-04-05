@@ -4,7 +4,7 @@ import { socials } from "techStack";
 const Socials = () => {
  
   return (
-    <div className=" hidden fixed bottom-0 lg:block left-4  text-[#8892B0] stroke2">
+    <div className=" hidden fixed bottom-0 lg:block left-4  text-[#8892B0]">
       {socials.map((item) => {
         return (
           <li

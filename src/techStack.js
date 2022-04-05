@@ -103,7 +103,7 @@ export const frameworks = [
 export const socials = [
   {
     name: "github",
-    img: "socialsIcon/github.svg" ,
+    img: "github-icon.png" ,
     link: "https://github.com/simplyDonald"  
   },
   {
