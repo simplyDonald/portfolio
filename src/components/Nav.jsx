@@ -17,7 +17,7 @@ const Nav = () => {
           className=" w-20 h-20 p-2 invert rotate-12"
         />
       </div>
-      <div className="py-4 cursor-pointer lg:hidden text-[#FFD700] hover:text-[#64FFDA]">
+      <div className="py-4 cursor-pointer lg:hidden text-[#FFD700] hover:text-[#64FFDA] transition ease-in duration-300">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-8"
