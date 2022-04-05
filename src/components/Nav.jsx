@@ -9,12 +9,31 @@ const Nav = () => {
   
 
   return (
-    <nav className="flex py-4 justify-between mx-10">
+    <nav className="flex py-4 justify-between mx-10 items-center">
       <div className="">
-        <img src="hero-logo.png" alt="diamond logo" className=" w-20 h-20 p-2 invert rotate-12" />
+        <img
+          src="hero-logo.png"
+          alt="diamond logo"
+          className=" w-20 h-20 p-2 invert rotate-12"
+        />
       </div>
-
-      <div className="">
+      <div className="py-4 cursor-pointer lg:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth="2"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </div>
+      <div className="hidden lg:block">
         <ul className="">
           {items.map((item) => (
             <li

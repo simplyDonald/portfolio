@@ -711,6 +711,10 @@ video {
   display: grid;
 }
 
+.hidden{
+  display: none;
+}
+
 .h-full{
   height: 100%;
 }
@@ -787,6 +791,10 @@ video {
 
 .items-start{
   align-items: flex-start;
+}
+
+.items-center{
+  align-items: center;
 }
 
 .justify-center{
@@ -1151,9 +1159,29 @@ body, html {
           filter: none;
 }
 
+@media (min-width: 640px){
+  .sm\:hidden{
+    display: none;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:hidden{
+    display: none;
+  }
+}
+
 @media (min-width: 1024px){
   .lg\:right-14{
     right: 3.5rem;
+  }
+
+  .lg\:block{
+    display: block;
+  }
+
+  .lg\:hidden{
+    display: none;
   }
 
   .lg\:grid-cols-2{
