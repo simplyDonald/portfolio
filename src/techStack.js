@@ -103,18 +103,25 @@ export const frameworks = [
 export const socials = [
   {
     name: "github",
-    img: "socialsIcon/github.svg"   
+    img: "socialsIcon/github.svg" ,
+    link: "https://github.com/simplyDonald"  
   },
   {
     name: "linkedin",
-    img: "socialsIcon/linkedin.svg"   
+    img: "socialsIcon/linkedin.svg", 
+    link: "https://www.linkedin.com/in/donaldabuah/"  
+
   },
   {
     name: "twitter",
-    img: "socialsIcon/twitter.svg"   
+    img: "socialsIcon/twitter.svg",
+    link: "https://twitter.com/DonaldAbuah"  
+
   },
   {
     name: "Instagram",
-    img: "socialsIcon/instagram.svg"   
+    img: "socialsIcon/instagram.svg",
+    link: "https://www.instagram.com/donaldabuah/"  
+
   }
 ];
