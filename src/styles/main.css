@@ -787,6 +787,10 @@ video {
   width: 2.5rem;
 }
 
+.w-4{
+  width: 1rem;
+}
+
 .max-w-4xl{
   max-width: 56rem;
 }
@@ -1008,6 +1012,11 @@ video {
   line-height: 1rem;
 }
 
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-black{
   font-weight: 900;
 }
@@ -1200,9 +1209,19 @@ body, html {
   background-color: rgba(12, 87, 69, var(--tw-bg-opacity));
 }
 
+.hover\:bg-red-700:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgba(185, 28, 28, var(--tw-bg-opacity));
+}
+
 .hover\:text-\[\#64FFDA\]:hover{
   --tw-text-opacity: 1;
   color: rgba(100, 255, 218, var(--tw-text-opacity));
+}
+
+.hover\:text-red-600:hover{
+  --tw-text-opacity: 1;
+  color: rgba(220, 38, 38, var(--tw-text-opacity));
 }
 
 .hover\:filter-none:hover{
