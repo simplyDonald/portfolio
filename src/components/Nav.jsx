@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
 import { Spin as Hamburger } from "hamburger-react";
 
-const Nav = () => {
+const Nav = ({isOpen, toggle}) => {
   // object for nav links
   const items = [
     { name: "About", link: "#about" },
@@ -9,6 +8,8 @@ const Nav = () => {
     { name: "TechStack", link: "#tech" },
     { name: "Contact", link: "#contact" },
   ];
+
+
 
   return (
     <nav className=" fixed flex py-4 justify-between px-10 z-10 items-center w-full">
@@ -19,7 +20,7 @@ const Nav = () => {
           className=" w-20 h-20 p-2 invert rotate-12"
         />
       </div>
-      <div className="py-4 cursor-pointer lg:hidden text-[#FFD700] hover:text-[#64FFDA] transition ease-in duration-300">
+      <div className="py-4 cursor-pointer lg:hidden text-[#FFD700] hover:text-[#64FFDA] transition ease-in duration-300" onClick={toggle}>
         {/* <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-8"

@@ -722,6 +722,10 @@ video {
   margin-right: 0.5rem;
 }
 
+.mt-0{
+  margin-top: 0px;
+}
+
 .inline-block{
   display: inline-block;
 }
@@ -1017,6 +1021,10 @@ video {
 
 .font-semibold{
   font-weight: 600;
+}
+
+.font-extrabold{
+  font-weight: 800;
 }
 
 .italic{
