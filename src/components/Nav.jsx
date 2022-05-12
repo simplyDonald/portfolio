@@ -20,7 +20,7 @@ const Nav = ({track, toggle}) => {
         />
       </div>
       <div
-        className="py-4 cursor-pointer lg:hidden text-[#FFD700] hover:text-[#64FFDA] transition ease-in duration-300 z-10"
+        className="py-4 cursor-pointer lg:hidden text-[#FFD700] hover:text-[#64FFDA] transition ease-in duration-300 z-30"
         onClick={toggle}
       >
         <Hamburger toggled={track} />

@@ -10,17 +10,18 @@ const SideMenu = ({toggle}) => {
 
   return (
     <div className="fixed text-white font-extrabold grid grid-cols-3 grid-flow-col h-full w-full bg-[#112240] z-10">
-      <div className="border borde-2 border-red-500 z-auto" onClick={toggle}>
+      <div className=" border borde-2 border-red-500 z-100" onClick={toggle}>
         this is number one
       </div>
       <div className="border borde-2 border-blue-500">2</div>
       <div className="border borde-2 border-green-500 col-span-2 col-start-2 pt-0 pb-20">
-        <div className="flex flex-col justify-center items-center h-full">
+        <div className="flex flex-col justify-center items-center h-full pt-36">
           <ul className="mb-8">
             {items.map((item) => (
               <li
                 key={item.name}
                 className="hover:text-[#64FFDA] text-4xl text-white block px-3 py-4 cursor-pointer"
+                onClick={toggle}
               >
                 <a href={item.link}>{item.name}</a>
               </li>
