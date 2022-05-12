@@ -16,7 +16,7 @@ function App() {
   const toggler = () => setOpen(!isOpen);
 
   return (
-    <div className="h-full relative">
+    <div className={isOpen ? "h-full relative overflow-hidden" : "h-full relative"}>
       {isOpen && (<div className="fixed text-black font-extrabold mt-0 h-full w-full bg-white z-10">
         hello
       </div>)}                                        
