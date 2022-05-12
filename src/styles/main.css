@@ -923,6 +923,16 @@ video {
   background-color: rgba(110, 189, 158, var(--tw-bg-opacity));
 }
 
+.bg-\[\#c1f1de\]{
+  --tw-bg-opacity: 1;
+  background-color: rgba(193, 241, 222, var(--tw-bg-opacity));
+}
+
+.bg-\[\#81e0ba\]{
+  --tw-bg-opacity: 1;
+  background-color: rgba(129, 224, 186, var(--tw-bg-opacity));
+}
+
 .p-5{
   padding: 1.25rem;
 }

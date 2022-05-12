@@ -8,6 +8,7 @@ import Contact from 'components/Contact';
 import Socials from 'components/Socials';
 import Mail from 'components/Mail';
 import Footer from 'components/Footer';
+import SideMenu from 'components/SideMenu';
 
 
 function App() {
@@ -38,9 +39,7 @@ function App() {
 
   return (
     <div className={isOpen ? "h-full relative overflow-hidden" : "h-full relative"}>
-      {(isOpen) && (<div className="fixed text-black font-extrabold mt-0 h-full w-full bg-[#6EBD9E] z-10">
-        hello
-      </div>)}                                        
+      {(isOpen) && <SideMenu />}                                        
       <Hero track={isOpen} toggle={toggler} />
       <div className="h-max text-white mx-auto  my-6 max-w-4xl">
         <About />
