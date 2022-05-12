@@ -1,9 +1,9 @@
 import Nav from "./Nav";
 
-function Hero({isOpen, toggle}) {
+function Hero({toggle}) {
   return (
     <div className="text-green-700 bg">
-      <Nav toggle={isOpen, toggle} />
+      <Nav toggle={toggle} />
       <div className="flex flex-col justify-center items-start h-screen lg:pl-64 pl-20 pb-48">
         <span className="text-[#FFD700] text-sm p-5 pl-2 text-white">
           Hi, my name is

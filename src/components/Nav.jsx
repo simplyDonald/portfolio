@@ -1,6 +1,6 @@
 import { Spin as Hamburger } from "hamburger-react";
 
-const Nav = ({isOpen, toggle}) => {
+const Nav = ({toggle}) => {
   // object for nav links
   const items = [
     { name: "About", link: "#about" },
@@ -20,21 +20,7 @@ const Nav = ({isOpen, toggle}) => {
           className=" w-20 h-20 p-2 invert rotate-12"
         />
       </div>
-      <div className="py-4 cursor-pointer lg:hidden text-[#FFD700] hover:text-[#64FFDA] transition ease-in duration-300" onClick={toggle}>
-        {/* <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-8"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth="2"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg> */}
+      <div className="py-4 cursor-pointer lg:hidden text-[#FFD700] hover:text-[#64FFDA] transition ease-in duration-300 z-10" onClick={toggle}>
 
         <Hamburger  />
       </div>

@@ -11,7 +11,7 @@ import Footer from 'components/Footer';
 
 
 function App() {
-  const [isOpen, setOpen] = useState(true)
+  const [isOpen, setOpen] = useState(false)
 
   const toggler = () => setOpen(!isOpen);
 
@@ -20,7 +20,7 @@ function App() {
       {isOpen && (<div className='fixed text-white font-extrabold mt-0'>
         hello
       </div>)}                                        
-      <Hero isOpen={isOpen} toggle={toggler} />
+      <Hero toggle={toggler} />
       <div className="h-max text-white mx-auto  my-6 max-w-4xl">
         <About />
         <Projects />
