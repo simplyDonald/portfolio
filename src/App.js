@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="h-full relative">
-      {isOpen && (<div className='fixed text-white font-extrabold mt-0'>
+      {isOpen && (<div className="fixed text-black font-extrabold mt-0 h-full w-full bg-white z-10">
         hello
       </div>)}                                        
       <Hero toggle={toggler} />

@@ -879,6 +879,14 @@ video {
   justify-self: center;
 }
 
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.overflow-y-hidden{
+  overflow-y: hidden;
+}
+
 .rounded{
   border-radius: 0.25rem;
 }
@@ -895,6 +903,11 @@ video {
 .bg-\[\#112240\]{
   --tw-bg-opacity: 1;
   background-color: rgba(17, 34, 64, var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
 .p-5{
@@ -1080,6 +1093,11 @@ video {
 .text-\[\#d8f3dc\]{
   --tw-text-opacity: 1;
   color: rgba(216, 243, 220, var(--tw-text-opacity));
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
 
 .opacity-25{
