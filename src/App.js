@@ -15,9 +15,9 @@ function App() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const toggler = () => setOpen(!isOpen);
-
+  
   useEffect(() => {
-
+    
     const changeWidth = () => {
       setScreenWidth(window.innerWidth);
     }

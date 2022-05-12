@@ -16,11 +16,13 @@ const Nav = ({track, toggle}) => {
         <img
           src="hero-logo.png"
           alt="diamond logo"
-          className=" w-20 h-20 p-2 invert rotate-12"
+          className={track ? "hidden" : " w-20 h-20 p-2 invert rotate-12"}
         />
       </div>
-      <div className="py-4 cursor-pointer lg:hidden text-[#FFD700] hover:text-[#64FFDA] transition ease-in duration-300 z-10" onClick={toggle}>
-
+      <div
+        className="py-4 cursor-pointer lg:hidden text-[#FFD700] hover:text-[#64FFDA] transition ease-in duration-300 z-10"
+        onClick={toggle}
+      >
         <Hamburger toggled={track} />
       </div>
       <div className="hidden lg:block">
