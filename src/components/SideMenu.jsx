@@ -1,6 +1,6 @@
 import { socials } from "techStack";      
 
-const SideMenu = () => {
+const SideMenu = ({toggle}) => {
   const items = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
@@ -9,11 +9,13 @@ const SideMenu = () => {
   ];
 
   return (
-    <div className="fixed text-white font-extrabold grid grid-cols-3 h-full w-full bg-[#112240] z-10">
-      <div>1</div>
-      <div>2</div>
-      <div className=" col-span-2 col-start-2 pt-0 pb-20">
-        <div className="flex flex-col justify-center items-center h-full pb-72 ">
+    <div className="fixed text-white font-extrabold grid grid-cols-3 grid-flow-col h-full w-full bg-[#112240] z-10">
+      <div className="border borde-2 border-red-500 z-auto" onClick={toggle}>
+        this is number one
+      </div>
+      <div className="border borde-2 border-blue-500">2</div>
+      <div className="border borde-2 border-green-500 col-span-2 col-start-2 pt-0 pb-20">
+        <div className="flex flex-col justify-center items-center h-full">
           <ul className="mb-8">
             {items.map((item) => (
               <li
@@ -33,7 +35,7 @@ const SideMenu = () => {
               </a>
             </li>
           </ul>
-              {/* Social Icons below */}
+          {/* Social Icons below */}
           <div className=" text-[#8892B0] pr-12">
             {socials.map((item) => {
               return (
