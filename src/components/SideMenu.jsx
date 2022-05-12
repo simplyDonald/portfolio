@@ -1,5 +1,6 @@
-const SideMenu = () => {
+import { socials } from "techStack";      
 
+const SideMenu = () => {
   const items = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
@@ -12,8 +13,8 @@ const SideMenu = () => {
       <div>1</div>
       <div>2</div>
       <div className=" col-span-2 col-start-2 pt-0 pb-20">
-        <div className="flex justify-center h-full ">
-          <ul className="">
+        <div className="flex flex-col justify-center items-center h-full pb-72 ">
+          <ul className="mb-8">
             {items.map((item) => (
               <li
                 key={item.name}
@@ -32,10 +33,30 @@ const SideMenu = () => {
               </a>
             </li>
           </ul>
+              {/* Social Icons below */}
+          <div className=" text-[#8892B0] pr-12">
+            {socials.map((item) => {
+              return (
+                <li
+                  key={item.name}
+                  className="invert w-5 m-1 list-none inline-block"
+                >
+                  <a
+                    href={item.link}
+                    rel="noreferrer"
+                    target="_blank"
+                    className=" "
+                  >
+                    <img src={item.img} alt="socials icon" className="" />
+                  </a>
+                </li>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
   );
-}
- 
+};
+
 export default SideMenu;
