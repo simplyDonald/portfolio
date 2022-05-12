@@ -1,6 +1,6 @@
 import { Spin as Hamburger } from "hamburger-react";
 
-const Nav = ({toggle}) => {
+const Nav = ({track, toggle}) => {
   // object for nav links
   const items = [
     { name: "About", link: "#about" },
@@ -8,7 +8,6 @@ const Nav = ({toggle}) => {
     { name: "TechStack", link: "#tech" },
     { name: "Contact", link: "#contact" },
   ];
-
 
 
   return (
@@ -22,7 +21,7 @@ const Nav = ({toggle}) => {
       </div>
       <div className="py-4 cursor-pointer lg:hidden text-[#FFD700] hover:text-[#64FFDA] transition ease-in duration-300 z-10" onClick={toggle}>
 
-        <Hamburger  />
+        <Hamburger toggled={track} />
       </div>
       <div className="hidden lg:block">
         <ul className="">

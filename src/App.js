@@ -41,7 +41,7 @@ function App() {
       {(isOpen) && (<div className="fixed text-black font-extrabold mt-0 h-full w-full bg-[#6EBD9E] z-10">
         hello
       </div>)}                                        
-      <Hero toggle={toggler} />
+      <Hero track={isOpen} toggle={toggler} />
       <div className="h-max text-white mx-auto  my-6 max-w-4xl">
         <About />
         <Projects />
