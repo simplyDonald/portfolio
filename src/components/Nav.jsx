@@ -1,15 +1,17 @@
+import React, { useState, useEffect } from 'react';
+import { Spin as Hamburger } from "hamburger-react";
+
 const Nav = () => {
   // object for nav links
   const items = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
     { name: "TechStack", link: "#tech" },
-    { name: "Contact", link: "#contact" }
+    { name: "Contact", link: "#contact" },
   ];
-  
 
   return (
-    <nav className="flex py-4 justify-between mx-10 items-center">
+    <nav className=" fixed flex py-4 justify-between px-10 z-10 items-center w-full">
       <div className="">
         <img
           src="hero-logo.png"
@@ -18,7 +20,7 @@ const Nav = () => {
         />
       </div>
       <div className="py-4 cursor-pointer lg:hidden text-[#FFD700] hover:text-[#64FFDA] transition ease-in duration-300">
-        <svg
+        {/* <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-8"
           fill="none"
@@ -31,7 +33,9 @@ const Nav = () => {
             strokeLinejoin="round"
             d="M4 6h16M4 12h16M4 18h16"
           />
-        </svg>
+        </svg> */}
+
+        <Hamburger  />
       </div>
       <div className="hidden lg:block">
         <ul className="">
@@ -56,6 +60,6 @@ const Nav = () => {
       </div>
     </nav>
   );
-}
- 
+};
+
 export default Nav;
