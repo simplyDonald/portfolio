@@ -18,15 +18,19 @@ function App() {
   const toggler = () => setOpen(!isOpen);
   
   useEffect(() => {
-    
+    //detect & record screensize
     const changeWidth = () => {
       setScreenWidth(window.innerWidth);
     }
 
     window.addEventListener('resize', changeWidth);
+
+    //hide scrollbar for modal bg
     if (isOpen) {
       document.body.classList.add("scroll-hide");
     }
+
+    //toggle modal open state using screensize
     if((screenWidth > 1023) && (isOpen === true)){
       toggler();
     }
