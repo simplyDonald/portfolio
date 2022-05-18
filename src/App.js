@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from 'components/Projects';
@@ -15,7 +15,8 @@ function App() {
   const [isOpen, setOpen] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
-  const toggler = () => setOpen(!isOpen);
+  // useCallback prevents re-renders of the useEffect hook every time the function gets defined
+  const toggler = useCallback(()=>{setOpen(!isOpen)},[isOpen])
   
   useEffect(() => {
     //detect & record screensize
@@ -39,7 +40,7 @@ function App() {
         document.body.classList.remove("scroll-hide");
     }
 
-  }, [isOpen,screenWidth])
+  }, [isOpen,screenWidth, toggler])
 
   
 
