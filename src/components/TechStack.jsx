@@ -12,11 +12,11 @@ const TechStack = () => {
         I try to learn constantly and I've enjoyed working with these so far
       </p>
       <ul>
-        <div className=" grid grid-cols-3 text-center mt-8 justify-items-center lg:grid-cols-6">
+        <div className=" grid grid-cols-3 gap-0 text-center mt-8 justify-items-center lg:grid-cols-6">
           {frameworks.map((item) => (
             <li
               key={item.name}
-              className="fofo hover:filter-none w-10 m-8 transition ease-in duration-300"
+              className="fofo hover:filter-none w-10 m-4 transition ease-in duration-300"
             >
               {item.name}
               <img src={item.img} alt="" />

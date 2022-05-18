@@ -9,7 +9,7 @@ const SideMenu = ({toggle}) => {
   ];
 
   return (
-    <div className="fixed text-white font-extrabold grid grid-cols-3 grid-flow-col h-full w-full z-10">
+    <div className="fixed text-white font-extrabold grid grid-cols-3 grid-flow-col inset-0  z-10">
       <div
         className=" backdrop-blur-md z-100"
         onClick={toggle}

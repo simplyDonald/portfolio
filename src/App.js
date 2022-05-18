@@ -38,18 +38,21 @@ function App() {
 
 
   return (
-    <div className={isOpen ? "h-full relative overflow-hidden" : "h-full relative"}>
-      {(isOpen) && <SideMenu toggle={toggler} />}                                                                           
-      <Hero track={isOpen} toggle={toggler} />
-      <div className="h-max text-white mx-auto  my-6 max-w-4xl">
-        <About />
-        <Projects />
-        <TechStack />
-        <Contact />
-        <Footer />
-      </div>
-      <Socials />
-      <Mail />
+    <div className={isOpen ? "h-full  relative" : "h-full relative "}>
+      
+      {(isOpen) && <SideMenu toggle={toggler} />}   
+
+        <Hero track={isOpen} toggle={toggler} />
+        <div className="h-max text-white mx-auto  my-6 max-w-4xl">
+          <About />
+          <Projects />
+          <TechStack />
+          <Contact />
+          <Footer />
+        </div>
+        <Socials />
+        <Mail />
+      
       
     </div>
   );
