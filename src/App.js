@@ -24,11 +24,15 @@ function App() {
     }
 
     window.addEventListener('resize', changeWidth);
+    if (isOpen) {
+      document.body.classList.add("scroll-hide");
+    }
     if((screenWidth > 1023) && (isOpen === true)){
       toggler();
     }
     return () => {
-        window.removeEventListener('resize', changeWidth)
+        window.removeEventListener('resize', changeWidth);
+        document.body.classList.remove("scroll-hide");
     }
 
   }, [isOpen,screenWidth])
@@ -38,7 +42,7 @@ function App() {
 
 
   return (
-    <div className={isOpen ? "h-full  relative" : "h-full relative "}>
+    <div className={isOpen ? "h-full overflow-hidden relative" : "h-full"}>
       
       {(isOpen) && <SideMenu toggle={toggler} />}   
 

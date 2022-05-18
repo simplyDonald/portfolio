@@ -2,7 +2,7 @@ import { socials } from "techStack";
 
 const SideMenu = ({toggle}) => {
   const items = [
-    { name: "About", link: "#about" },
+    { name: "About", link: "#about" } ,
     { name: "Projects", link: "#projects" },
     { name: "TechStack", link: "#tech" },
     { name: "Contact", link: "#contact" },

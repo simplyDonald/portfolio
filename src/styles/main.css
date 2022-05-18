@@ -1211,9 +1211,13 @@ video {
 /* for full page bg-img height */
 
 body, html {
-  height: 100%;
+  /* height: 100%; */
   background-color: #0A192F;
   scroll-behavior: smooth;
+}
+
+.scroll-hide {
+  overflow: hidden;
 }
 
 /* for full page bg-img height */
