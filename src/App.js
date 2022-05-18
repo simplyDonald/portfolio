@@ -47,7 +47,7 @@ function App() {
 
 
   return (
-    <div className={isOpen ? "h-full overflow-hidden relative" : "h-full"}>
+    <div className="h-full">
       
       {(isOpen) && <SideMenu toggle={toggler} />}   
 
