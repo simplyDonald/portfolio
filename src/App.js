@@ -9,6 +9,8 @@ import Socials from 'components/Socials';
 import Mail from 'components/Mail';
 import Footer from 'components/Footer';
 import SideMenu from 'components/SideMenu';
+import Nav from "components/Nav";
+
 
 
 function App() {
@@ -47,20 +49,20 @@ function App() {
 
 
   return (
-    <div className="h-full">
+    <div className="h-full relative">
       
       {(isOpen) && <SideMenu toggle={toggler} />}   
-
-        <Hero track={isOpen} toggle={toggler} />
-        <div className="h-max text-white mx-auto  my-6 max-w-4xl">
-          <About />
-          <Projects />
-          <TechStack />
-          <Contact />
-          <Footer />
-        </div>
-        <Socials />
-        <Mail />
+      <Nav track={isOpen} toggle={toggler} />
+      <Hero />
+      <div className="h-max text-white mx-auto  my-6 max-w-4xl">
+        <About />
+        <Projects />
+        <TechStack />
+        <Contact />
+        <Footer />
+      </div>
+      <Socials />
+      <Mail />
       
       
     </div>
