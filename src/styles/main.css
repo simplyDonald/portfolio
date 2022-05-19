@@ -843,6 +843,10 @@ video {
   width: 2.5rem;
 }
 
+.w-14{
+  width: 3.5rem;
+}
+
 .max-w-4xl{
   max-width: 56rem;
 }
@@ -853,6 +857,10 @@ video {
 
 .max-w-lg{
   max-width: 32rem;
+}
+
+.flex-none{
+  flex: none;
 }
 
 .origin-bottom-right{
