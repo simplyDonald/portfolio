@@ -14,7 +14,7 @@ const Nav = ({track, toggle}) => {
 
 
   return (
-    <nav className=" backdrop-blur-sm fixed top-0 left-0 flex justify-between  py-4  px-5 z-10 items-center w-full transition-all ease-in-out ">
+    <nav className=" backdrop-blur-sm fixed top-0 left-0 flex justify-between  py-4  px-5 z-10 items-center w-full transition-all ease-in-out duration-200 ">
       <div className="">
         <img
           src="hero-logo.png"

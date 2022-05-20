@@ -16,7 +16,7 @@ import Nav from "components/Nav";
 function App() {
   const [isOpen, setOpen] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const [pageOffset, setPageOffset] = useState(window.pageYOffset);
+  // const [pageOffset, setPageOffset] = useState(window.pageYOffset);
 
 
   // useCallback prevents re-renders of the useEffect hook every time the function gets defined
@@ -29,15 +29,14 @@ function App() {
     }
 
     // record scroll position
-    const setOffset = () => {
-      setPageOffset(window.pageYOffset);
-    }
+    // const setOffset = () => {
+    //   setPageOffset(window.pageYOffset);
+    // }
 
     // event listeners
     window.addEventListener('resize', changeWidth);
     // window.addEventListener('scroll', setOffset);
 
-    console.log(pageOffset);
 
     //hide scrollbar for modal bg
     if (isOpen) {
@@ -49,7 +48,7 @@ function App() {
       toggler();
     }
 
-    // hide navbar on scroll
+    // hide/show navbar on scroll
     const navbar = document.querySelector("nav");
     let lastScroll = 0;
     const scrollFunc = () => {
@@ -78,7 +77,7 @@ function App() {
         document.body.classList.remove("scroll-hide");
     }
 
-  }, [isOpen,screenWidth, toggler, pageOffset])
+  }, [isOpen,screenWidth, toggler])
 
   
 
