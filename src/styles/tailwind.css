@@ -21,7 +21,7 @@ body, html {
 }
 
 .scroll-up {
-  transform: translateY(100%);
+  transform: translateY(0%);
 }
 
 

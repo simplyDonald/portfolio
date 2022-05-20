@@ -35,7 +35,7 @@ function App() {
 
     // event listeners
     window.addEventListener('resize', changeWidth);
-    window.addEventListener('scroll', setOffset);
+    // window.addEventListener('scroll', setOffset);
 
     console.log(pageOffset);
 
@@ -71,7 +71,7 @@ function App() {
     // cleanup
     return () => {
         window.removeEventListener('resize', changeWidth);
-        window.removeEventListener('scroll', setOffset);
+        // window.removeEventListener('scroll', setOffset);
         window.removeEventListener('scroll', scrollFunc);
 
 
