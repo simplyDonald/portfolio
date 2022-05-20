@@ -847,6 +847,10 @@ video {
   width: 3.5rem;
 }
 
+.w-screen{
+  width: 100vw;
+}
+
 .max-w-4xl{
   max-width: 56rem;
 }
@@ -940,6 +944,10 @@ video {
   place-self: center;
 }
 
+.self-center{
+  align-self: center;
+}
+
 .justify-self-end{
   justify-self: end;
 }
@@ -1018,6 +1026,21 @@ video {
   padding-right: 1.25rem;
 }
 
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pl-20{
   padding-left: 5rem;
 }
@@ -1052,6 +1075,10 @@ video {
 
 .pr-12{
   padding-right: 3rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
 }
 
 .text-left{

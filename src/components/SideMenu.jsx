@@ -1,6 +1,8 @@
-import { socials } from "techStack";      
+import { socials } from "techStack";  
+// import { Spin as Hamburger } from "hamburger-react";
 
-const SideMenu = ({toggle}) => {
+
+const SideMenu = ({track, toggle}) => {
   const items = [
     { name: "About", link: "#about" } ,
     { name: "Projects", link: "#projects" },
@@ -10,14 +12,10 @@ const SideMenu = ({toggle}) => {
 
   return (
     <div className="fixed text-white font-extrabold grid grid-cols-3 grid-flow-col inset-0  z-10">
-      <div
-        className=" backdrop-blur-md z-100"
-        onClick={toggle}
-      >
-      
-      </div>
+      <div className=" backdrop-blur-md z-100" onClick={toggle}></div>
       <div className="bg-[#112240]"></div>
-      <div className="bg-[#112240] col-span-2 col-start-2 pt-0 pb-20">
+      <div className="bg-[#112240] col-span-2 col-start-2 grid pt-0 pb-20">
+
         <div className="flex flex-col justify-center items-center h-full pt-36">
           <ul className="mb-8">
             {items.map((item) => (
@@ -39,6 +37,7 @@ const SideMenu = ({toggle}) => {
               </a>
             </li>
           </ul>
+
           {/* Social Icons below */}
           <div className=" text-[#8892B0] pr-12">
             {socials.map((item) => {

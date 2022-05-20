@@ -16,6 +16,8 @@ import Nav from "components/Nav";
 function App() {
   const [isOpen, setOpen] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [pageOffset, setPageOffset] = useState(window.pageYOffset);
+
 
   // useCallback prevents re-renders of the useEffect hook every time the function gets defined
   const toggler = useCallback(()=>{setOpen(!isOpen)},[isOpen])
@@ -26,7 +28,14 @@ function App() {
       setScreenWidth(window.innerWidth);
     }
 
+    const setOffset = () => {
+      setPageOffset(window.pageYOffset);
+    }
+
+
     window.addEventListener('resize', changeWidth);
+    window.addEventListener('scroll', setOffset);
+    console.log(pageOffset);
 
     //hide scrollbar for modal bg
     if (isOpen) {
@@ -39,10 +48,12 @@ function App() {
     }
     return () => {
         window.removeEventListener('resize', changeWidth);
+        window.removeEventListener('scroll', setOffset);
+
         document.body.classList.remove("scroll-hide");
     }
 
-  }, [isOpen,screenWidth, toggler])
+  }, [isOpen,screenWidth, toggler, pageOffset])
 
   
 
@@ -51,7 +62,7 @@ function App() {
   return (
     <div className="h-full relative">
       
-      {(isOpen) && <SideMenu toggle={toggler} />}   
+      {(isOpen) && <SideMenu track={isOpen} toggle={toggler} />}   
       <Nav track={isOpen} toggle={toggler} />
       <Hero />
       <div className="h-max text-white mx-auto  my-6 max-w-4xl">
