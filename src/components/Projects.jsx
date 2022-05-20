@@ -12,7 +12,7 @@ function Projects() {
           <img
             src={item.img}
             alt={`screenshot of ${item.name} page`}
-            className="fofo hover:filter-none transition ease-in-out delay-1000 hover:cursor-pointer"
+            className="fofo hover:filter-none transition ease-in-out delay-1000"
           />
         </div>
 
