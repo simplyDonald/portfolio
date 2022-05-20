@@ -16,6 +16,14 @@ body, html {
   overflow: hidden;
 }
 
+.scroll-down {
+  transform: translateY(-100%);
+}
+
+.scroll-up {
+  transform: translateY(100%);
+}
+
 
 /* for full page bg-img height */
 #root{

@@ -28,13 +28,15 @@ function App() {
       setScreenWidth(window.innerWidth);
     }
 
+    // record scroll position
     const setOffset = () => {
       setPageOffset(window.pageYOffset);
     }
 
-
+    // event listeners
     window.addEventListener('resize', changeWidth);
     window.addEventListener('scroll', setOffset);
+
     console.log(pageOffset);
 
     //hide scrollbar for modal bg
@@ -46,9 +48,32 @@ function App() {
     if((screenWidth > 1023) && (isOpen === true)){
       toggler();
     }
+
+    // hide navbar on scroll
+    const navbar = document.querySelector("nav");
+    let lastScroll = 0;
+    const scrollFunc = () => {
+    let currentScroll = window.pageYOffset;
+    if (currentScroll - lastScroll > 0) {
+      navbar.classList.add("scroll-down");
+      navbar.classList.remove("scroll-up");
+    } else {
+      // scrolled up -- navbar show
+      navbar.classList.add("scroll-up");
+      navbar.classList.remove("scroll-down");
+    }
+    lastScroll = currentScroll;
+    }
+
+    window.addEventListener('scroll', scrollFunc);
+
+
+    // cleanup
     return () => {
         window.removeEventListener('resize', changeWidth);
         window.removeEventListener('scroll', setOffset);
+        window.removeEventListener('scroll', scrollFunc);
+
 
         document.body.classList.remove("scroll-hide");
     }
