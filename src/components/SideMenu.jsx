@@ -65,8 +65,8 @@ const SideMenu = ({track, toggle}) => {
       scale: 1
     },
     onHover:{
-      y: -20,
-      scale: 1.5
+      y: -10,
+      scale: 1.15
     }
   }
 
