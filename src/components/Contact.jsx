@@ -1,3 +1,5 @@
+import { socials } from "techStack";
+
 const Contact = () => {
   return (
     <div id="contact" className="text-center py-44 grid justify-items-center ">
@@ -25,14 +27,33 @@ const Contact = () => {
       </p>
       <a
         className="border border-[#64FFDA]   hover:bg-[#0c5745] text-[#64FFDA] inline-block px-3 max-w-sm py-2 cursor-pointer mt-8 rounded tracking-wide transition ease-in duration-300"
-          rel="noreferrer"
-          href="mailto:donaldabuah@gmail.com?subject=Hi Donald"
-          target="_blank"
+        rel="noreferrer"
+        href="mailto:donaldabuah@gmail.com?subject=Hi Donald"
+        target="_blank"
       >
         Say Hi
       </a>
+      <div className="lg:hidden p-8 text-[#8892B0] ">
+        {socials.map((item) => {
+          return (
+            <li
+              key={item.name}
+              className="invert w-5 m-1 list-none inline-block"
+            >
+              <a
+                href={item.link}
+                rel="noreferrer"
+                target="_blank"
+                className=" "
+              >
+                <img src={item.img} alt="socials icon" className="" />
+              </a>
+            </li>
+          );
+        })}
+      </div>
     </div>
   );
-}
- 
+};
+
 export default Contact;
