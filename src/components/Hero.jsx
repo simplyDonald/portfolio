@@ -14,7 +14,7 @@ function Hero() {
         <motion.p
           initial={{ x: -1000, opacity: 0 }}
           animate={{ x: 20, opacity: 1 }}
-          transition= {{ type: "spring", stiffness: 300, delay: 2 }}
+          transition= {{ type: "spring", stiffness: 300, delay: .5 }}
           className="text-white text-3xl pl-2 font-body"
         >
           <span className="italic">FullStack</span>{" "}
