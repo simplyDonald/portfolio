@@ -53,10 +53,22 @@ const SideMenu = ({track, toggle}) => {
       opacity: 1,
       y: 0,
       transition:{
-        duration: .5
+        duration: .5,
+        
       }
     },
   };
+
+  const iconVariants = {
+    intial:{
+      y: 0,
+      scale: 1
+    },
+    onHover:{
+      y: -20,
+      scale: 1.5
+    }
+  }
 
   return (
     <motion.div
@@ -87,7 +99,12 @@ const SideMenu = ({track, toggle}) => {
                 variants={containerVariants}
                 onClick={toggle}
               >
-                <motion.a variants={navItemVariants} href={item.link}>{item.name}</motion.a>
+                <motion.a 
+                  variants={navItemVariants} 
+                  href={item.link}
+                >
+                  {item.name}
+                </motion.a>
               </motion.li>
             ))}
             <li
@@ -117,7 +134,13 @@ const SideMenu = ({track, toggle}) => {
                     target="_blank"
                     className=" "
                   >
-                    <img src={item.img} alt="socials icon" className="" />
+                    <motion.img
+                      variants={iconVariants}
+                      whileHover= "onHover"
+                      src={item.img}
+                      alt="socials icon"
+                      className=""
+                    />
                   </a>
                 </li>
               );
