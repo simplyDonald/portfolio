@@ -7,7 +7,9 @@ const TechStack = () => {
 
   return (
     <div id="tech" className="h-full mb-48">
-      <h2 className="stroke text-3xl mt-8 ml-8">Some tools in my toolbox</h2>
+      <h2 className=" text-3xl mt-8 ml-8 text-center">
+        Some tools in my toolbox
+      </h2>
       <p className="font-body mt-2 text-center text-[#64FFDA]">
         I try to learn constantly and I've enjoyed working with these so far
       </p>
