@@ -12,27 +12,44 @@ const SideMenu = ({track, toggle}) => {
   ];
 
   const menuVariants = {
-    initial:{
-      x: 1000,
-      opacity: 0
+    initial: {
+      y: -500,
+      opacity: 0,
     },
-    animate:{
-      x: 0,
+    animate: {
+      y: 0,
       opacity: 1,
-      transition:{
+      transition: {
         type: "tween",
-        duration: "0.1"
+        duration: "0.1",
+        when: "beforeChildren",
+        staggerChildren: 0.5
+      },
+    },
+  };
+
+
+
+  const navItemVariants = {
+    initial: {
+      opacity: 0,
+      y: -50
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition:{
+        duration: 1
       }
-    }
-    
-  }
+    },
+  };
 
   return (
     <motion.div
       className="fixed text-white font-extrabold grid grid-cols-3 grid-flow-col inset-0  z-10"
       variants={menuVariants}
-      initial= "initial"
-      animate= "animate"
+      initial="initial"
+      animate="animate"
       exit={{ x: 1000, transition: { duration: 0.1 } }}
     >
       <div className=" backdrop-blur-md z-100" onClick={toggle}></div>
@@ -41,13 +58,16 @@ const SideMenu = ({track, toggle}) => {
         <div className="flex flex-col justify-center items-center h-full pt-36">
           <ul className="mb-8">
             {items.map((item) => (
-              <li
+              <motion.li
                 key={item.name}
                 className="hover:text-[#64FFDA] text-4xl text-white block px-3 py-4 cursor-pointer"
+                variants={navItemVariants}
+                initial="initial"
+                animate="animate"
                 onClick={toggle}
               >
                 <a href={item.link}>{item.name}</a>
-              </li>
+              </motion.li>
             ))}
             <li className="border border-[#64FFDA] ml-5   hover:bg-[#0c5745] text-[#64FFDA] text-2xl inline-block px-3 py-2 cursor-pointer rounded transition ease-in duration-300">
               <a
