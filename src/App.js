@@ -10,6 +10,7 @@ import Mail from 'components/Mail';
 import Footer from 'components/Footer';
 import SideMenu from 'components/SideMenu';
 import Nav from "components/Nav";
+import { AnimatePresence } from "framer-motion";
 
 
 
@@ -85,8 +86,10 @@ function App() {
 
   return (
     <div className="h-full relative">
-      
-      {(isOpen) && <SideMenu track={isOpen} toggle={toggler} />}   
+      <AnimatePresence>
+        {(isOpen) && <SideMenu track={isOpen} toggle={toggler}/>}   
+
+      </AnimatePresence>
       <Nav track={isOpen} toggle={toggler} />
       <Hero />
       <div className="h-max text-white mx-auto  my-6 max-w-4xl">

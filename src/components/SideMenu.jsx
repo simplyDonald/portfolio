@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { socials } from "techStack";  
 // import { Spin as Hamburger } from "hamburger-react";
 
@@ -11,11 +12,13 @@ const SideMenu = ({track, toggle}) => {
   ];
 
   return (
-    <div className="fixed text-white font-extrabold grid grid-cols-3 grid-flow-col inset-0  z-10">
+    <motion.div
+      className="fixed text-white font-extrabold grid grid-cols-3 grid-flow-col inset-0  z-10"
+      exit={{ opacity: 0, scale: 0.5, transition: { duration: 0.6 } }}
+    >
       <div className=" backdrop-blur-md z-100" onClick={toggle}></div>
       <div className="bg-[#112240]"></div>
       <div className="bg-[#112240] col-span-2 col-start-2 grid pt-0 pb-20">
-
         <div className="flex flex-col justify-center items-center h-full pt-36">
           <ul className="mb-8">
             {items.map((item) => (
@@ -60,7 +63,7 @@ const SideMenu = ({track, toggle}) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -12,8 +12,9 @@ function Hero() {
           <span className="text-[#FFD700] y pl-0 font-sans"> Abuah.</span>{" "}
         </p>
         <motion.p
-          initial={{ x: -1000 }}
-          animate={{ x: 0 }}
+          initial={{ x: -1000, opacity: 0 }}
+          animate={{ x: 20, opacity: 1 }}
+          transition= {{ type: "spring", stiffness: 300, delay: 2 }}
           className="text-white text-3xl pl-2 font-body"
         >
           <span className="italic">FullStack</span>{" "}
