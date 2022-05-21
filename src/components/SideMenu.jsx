@@ -11,10 +11,29 @@ const SideMenu = ({track, toggle}) => {
     { name: "Contact", link: "#contact" },
   ];
 
+  const menuVariants = {
+    initial:{
+      x: 1000,
+      opacity: 0
+    },
+    animate:{
+      x: 0,
+      opacity: 1,
+      transition:{
+        type: "tween",
+        duration: "0.1"
+      }
+    }
+    
+  }
+
   return (
     <motion.div
       className="fixed text-white font-extrabold grid grid-cols-3 grid-flow-col inset-0  z-10"
-      exit={{ opacity: 0, scale: 0.5, transition: { duration: 0.6 } }}
+      variants={menuVariants}
+      initial= "initial"
+      animate= "animate"
+      exit={{ x: 1000, transition: { duration: 0.1 } }}
     >
       <div className=" backdrop-blur-md z-100" onClick={toggle}></div>
       <div className="bg-[#112240]"></div>
