@@ -61,12 +61,14 @@ const SideMenu = ({track, toggle}) => {
 
   const iconVariants = {
     intial:{
-      y: 0,
-      scale: 1
+    
     },
     onHover:{
       y: -10,
-      scale: 1.15
+      scale: 1.15,
+      transition: {
+      type: "tween"
+    }
     }
   }
 
