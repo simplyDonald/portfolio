@@ -12,7 +12,7 @@ const TechStack = () => {
         I try to learn constantly and I've enjoyed working with these so far
       </p>
       <ul>
-        <div className=" grid grid-cols-3 gap-0 text-center mt-8 justify-items-center lg:grid-cols-6">
+        <div className=" grid grid-cols-3 gap-0 text-center mt-8 justify-items-center lg:grid-cols-6 w-96 lg:w-auto mx-auto">
           {frameworks.map((item) => (
             <li
               key={item.name}

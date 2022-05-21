@@ -843,6 +843,14 @@ video {
   width: 2.5rem;
 }
 
+.w-56{
+  width: 14rem;
+}
+
+.w-96{
+  width: 24rem;
+}
+
 .max-w-4xl{
   max-width: 56rem;
 }
@@ -1367,6 +1375,14 @@ body, html {
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:w-9{
+    width: 2.25rem;
+  }
+
+  .lg\:w-auto{
+    width: auto;
   }
 
   .lg\:grid-cols-2{
