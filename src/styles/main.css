@@ -851,6 +851,22 @@ video {
   width: 24rem;
 }
 
+.w-36{
+  width: 9rem;
+}
+
+.w-48{
+  width: 12rem;
+}
+
+.w-64{
+  width: 16rem;
+}
+
+.w-80{
+  width: 20rem;
+}
+
 .max-w-4xl{
   max-width: 56rem;
 }
@@ -940,6 +956,10 @@ video {
   place-self: center;
 }
 
+.self-center{
+  align-self: center;
+}
+
 .justify-self-end{
   justify-self: end;
 }
@@ -976,6 +996,14 @@ video {
 
 .p-6{
   padding: 1.5rem;
+}
+
+.p-8{
+  padding: 2rem;
+}
+
+.p-4{
+  padding: 1rem;
 }
 
 .py-20{
