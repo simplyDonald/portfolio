@@ -44,7 +44,7 @@ const SideMenu = ({track, toggle}) => {
               return (
                 <li
                   key={item.name}
-                  className="invert w-5 m-1 list-none inline-block"
+                  className="invert w-5 m-2 list-none inline-block"
                 >
                   <a
                     href={item.link}
