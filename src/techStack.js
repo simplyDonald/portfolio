@@ -133,6 +133,8 @@ const items = [
     { name: "Projects", link: "#projects" },
     { name: "TechStack", link: "#tech" },
     { name: "Contact", link: "#contact" },
+    { name: "Resume", link: "https://resume.io/r/dAzgD3MkP", target: "blank" }
+
   ];
 
 

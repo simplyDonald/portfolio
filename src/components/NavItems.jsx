@@ -27,51 +27,37 @@ const NavItems = ({track,toggle,layout}) => {
   const itemVariants = {
     initial: {
       opacity: 0,
-      y: -50,
+      y: -50
     },
     animate: {
       opacity: 1,
       y: 0,
-    },
-  };
-
-  const resumeVariants = {
-    initial: {
-      opacity: 0,
-    
-    },
-    animate: {
-      opacity: 1,
-    
       transition: {
-        ease: "easeIn",
-        duration: .1
-
-      },
+        ease: "easeIn"
+      }
     },
   };
+
 
   return (
-    <ul className={classNames({"pr-8": `${layout}` === "topNav"})}>
+    <ul className={classNames({ "pr-8": `${layout}` === "topNav" })}>
       {items.map((item) => (
-        <motion.li 
-          key={item.name} 
-          className={navClass} 
+        <motion.li
+          key={item.name}
+          className={item.name === "Resume" ? resumeClass : navClass}
           variants={itemVariants}
-          onClick={()=>toggleHandler(track, toggle)}
+          onClick={() => toggleHandler(track, toggle)}
         >
-          <a href={item.link}>{item.name}</a>
+          <a
+            href={item.link}
+            target={item.name === "Resume" ? "_blank" : ""}
+            rel="noreferrer"
+          >
+            {item.name}
+          </a>
         </motion.li>
       ))}
-      <motion.li variants={resumeVariants} className={resumeClass}>
-        <a
-          rel="noreferrer"
-          href="https://resume.io/r/dAzgD3MkP"
-          target="_blank"
-        >
-          Resume
-        </a>
-      </motion.li>
+      
     </ul>
   );
 }
