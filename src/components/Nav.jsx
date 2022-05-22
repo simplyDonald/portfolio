@@ -31,10 +31,7 @@ const Nav = ({track, toggle}) => {
     animate: {
       y: 0,
       opacity: 1,
-      transition: {
-        type: "spring",
-        stiffness: 500
-      },
+      duration: .2
     },
   };
 
