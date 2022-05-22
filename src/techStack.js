@@ -48,6 +48,7 @@ const techStack = [
   },
 ];
 
+
 const frameworks = [
   {
     name: "Javascript",
@@ -99,7 +100,7 @@ const frameworks = [
   }
 ];
 
-
+// social icons 
 const socials = [
   {
     name: "github",
@@ -126,6 +127,7 @@ const socials = [
   }
 ];
 
+// object for navlinks
 const items = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },

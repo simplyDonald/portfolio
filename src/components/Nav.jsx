@@ -4,10 +4,6 @@ import { items } from "techStack";
 
 
 const Nav = ({track, toggle}) => {
-  // object for nav links
-  
-
- 
 
 
   return (
