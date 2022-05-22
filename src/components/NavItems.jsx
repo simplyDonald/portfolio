@@ -5,8 +5,8 @@ import { items } from "techStack";
 const NavItems = ({layout}) => {
 
   const navClass = classNames("hover:text-[#64FFDA]", "text-white","px-3","cursor-pointer", {
-    "inline-block": `${layout}` === "topNav",
-    "button--danger": `${layout}` === "sideMenu"
+    "inline-block py-2": `${layout}` === "topNav",
+    "text-4xl block py-4": `${layout}` === "sideMenu"
   });
 
   return (
@@ -14,7 +14,7 @@ const NavItems = ({layout}) => {
       {items.map((item) => (
         <li
           key={item.name}
-          className="hover:text-[#64FFDA] text-white inline-block px-3 py-2 cursor-pointer"
+          className={navClass}
         >
           <a href={item.link}>{item.name}</a>
         </li>
