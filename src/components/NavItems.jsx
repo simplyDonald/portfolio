@@ -23,15 +23,15 @@ const NavItems = ({layout}) => {
 
   const resumeVariants = {
     initial: {
-      opacity: 0
+      opacity: 0,
     },
     animate: {
       opacity: 1,
       transition: {
         ease: "easeIn"
-      }
-    }
-  }
+      },
+    },
+  };
 
   return (
     <ul>
