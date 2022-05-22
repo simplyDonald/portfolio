@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { socials } from "techStack";  
+import Socials from "./Socials";
 // import { Spin as Hamburger } from "hamburger-react";
 
 
@@ -59,19 +59,6 @@ const SideMenu = ({track, toggle}) => {
     },
   };
 
-  const iconVariants = {
-    intial:{
-    
-    },
-    onHover:{
-      y: -10,
-      scale: 1.15,
-      transition: {
-      type: "tween"
-    }
-    }
-  }
-
   return (
     <motion.div
       className="fixed text-white font-extrabold grid grid-cols-3 grid-flow-col inset-0  z-10"
@@ -124,30 +111,8 @@ const SideMenu = ({track, toggle}) => {
           </ul>
 
           {/* Social Icons below */}
-          <div className=" text-[#8892B0] pr-12">
-            {socials.map((item) => {
-              return (
-                <li
-                  key={item.name}
-                  className="invert w-5 m-2 list-none inline-block"
-                >
-                  <a
-                    href={item.link}
-                    rel="noreferrer"
-                    target="_blank"
-                    className=" "
-                  >
-                    <motion.img
-                      variants={iconVariants}
-                      whileHover="onHover"
-                      src={item.img}
-                      alt="socials icon"
-                      className=""
-                    />
-                  </a>
-                </li>
-              );
-            })}
+          <div className="pr-12">
+            <Socials />
           </div>
         </div>
       </div>
