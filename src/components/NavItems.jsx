@@ -7,7 +7,6 @@ import { items } from "techStack";
 const NavItems = ({track,toggle,layout}) => {
   
   const toggleHandler = (tracker, toggleFn) => {
-    console.log(`hello form inside your handler`,tracker);
     if (tracker) {
       toggleFn();
     }
