@@ -1,10 +1,17 @@
 import classNames from "classnames";
 import { motion } from "framer-motion";
+
 import { items } from "techStack";
 
 
-const NavItems = ({layout}) => {
-
+const NavItems = ({track,toggle,layout}) => {
+  
+  const toggleHandler = (tracker, toggleFn) => {
+    console.log(`hello form inside your handler`,tracker);
+    if (tracker) {
+      toggleFn();
+    }
+  };
   const navClass = classNames("hover:text-[#64FFDA]", "text-white","px-3","cursor-pointer", {
     "inline-block py-2": `${layout}` === "topNav",
     "text-4xl block py-4": `${layout}` === "sideMenu"               
@@ -46,6 +53,7 @@ const NavItems = ({layout}) => {
           key={item.name} 
           className={navClass} 
           variants={itemVariants}
+          onClick={()=>toggleHandler(track, toggle)}
         >
           <a href={item.link}>{item.name}</a>
         </motion.li>
@@ -62,5 +70,5 @@ const NavItems = ({layout}) => {
     </ul>
   );
 }
- 
+
 export default NavItems;

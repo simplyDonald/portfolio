@@ -45,7 +45,7 @@ const SideMenu = ({track, toggle}) => {
           className="flex flex-col justify-center items-center h-full pt-36"
         >
           <div className="mb-8">
-            <NavItems layout="sideMenu" />
+            <NavItems track={track} toggle={toggle} layout="sideMenu" />
           </div>
 
           {/* Social Icons below */}

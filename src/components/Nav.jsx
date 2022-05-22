@@ -46,7 +46,7 @@ const Nav = ({track, toggle}) => {
         animate="animate"
         className="hidden lg:block"
       >
-        <NavItems layout="topNav" />
+        <NavItems track={track} toggle={toggle} layout="topNav" />
       </motion.div>
     </nav>
   );
