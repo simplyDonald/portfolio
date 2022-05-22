@@ -12,7 +12,7 @@ const NavItems = ({track,toggle,layout}) => {
       toggleFn();
     }
   }, []);
-  
+
   const navClass = classNames("hover:text-[#64FFDA]", "text-white","px-3","cursor-pointer", {
     "inline-block py-2": `${layout}` === "topNav",
     "text-4xl block py-4": `${layout}` === "sideMenu"               
@@ -38,11 +38,15 @@ const NavItems = ({track,toggle,layout}) => {
   const resumeVariants = {
     initial: {
       opacity: 0,
+    
     },
     animate: {
       opacity: 1,
+    
       transition: {
-        ease: "easeIn"
+        ease: "easeIn",
+        duration: .1
+
       },
     },
   };
