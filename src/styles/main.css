@@ -1139,6 +1139,18 @@ video {
   padding-right: 3rem;
 }
 
+.pl-4{
+  padding-left: 1rem;
+}
+
+.pl-8{
+  padding-left: 2rem;
+}
+
+.pr-8{
+  padding-right: 2rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -1447,6 +1459,11 @@ body, html {
 .hover\:text-\[\#64FFDA\]:hover{
   --tw-text-opacity: 1;
   color: rgba(100, 255, 218, var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 .hover\:filter-none:hover{

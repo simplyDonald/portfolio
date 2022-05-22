@@ -25,7 +25,7 @@ const Socials = () => {
                 whileHover="onHover"
                 src={item.img}
                 alt="socials icon"
-                className=""
+                className="hover:text-red-600"
               />
             </a>
           </li>

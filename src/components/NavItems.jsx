@@ -46,7 +46,7 @@ const NavItems = ({track,toggle,layout}) => {
   };
 
   return (
-    <ul>
+    <ul className={classNames({"pr-8": `${layout}` === "topNav"})}>
       {items.map((item) => (
         <motion.li 
           key={item.name} 
