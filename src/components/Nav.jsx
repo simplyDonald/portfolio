@@ -23,6 +23,21 @@ const Nav = ({track, toggle}) => {
     },
   };
 
+  const hamburgerVariants = {
+    initial: {
+      y: -500,
+      opacity: 0,
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 500
+      },
+    },
+  };
+
 
   return (
     <nav className=" backdrop-blur-sm fixed top-0 left-0 flex justify-between  py-4  px-5 z-10 items-center w-full transition-all ease-in-out duration-500 ">
@@ -40,12 +55,15 @@ const Nav = ({track, toggle}) => {
         </a>
       </div>
 
-      <div
+      <motion.div
         className="py-4 cursor-pointer lg:hidden text-[#FFD700] hover:text-[#64FFDA] transition ease-in duration-300 z-30"
+        variants={hamburgerVariants}
+        initial="initial"
+        animate="animate"
         onClick={toggle}
       >
         <Hamburger toggled={track} />
-      </div>
+      </motion.div>
       <motion.div
         variants={containerVariants}
         initial="initial"
