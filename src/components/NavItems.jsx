@@ -21,6 +21,18 @@ const NavItems = ({layout}) => {
     },
   };
 
+  const resumeVariants = {
+    initial: {
+      opacity: 0
+    },
+    animate: {
+      opacity: 1,
+      transition: {
+        ease: "easeIn"
+      }
+    }
+  }
+
   return (
     <ul>
       {items.map((item) => (
@@ -32,7 +44,7 @@ const NavItems = ({layout}) => {
           <a href={item.link}>{item.name}</a>
         </motion.li>
       ))}
-      <li className="border border-[#64FFDA]   hover:bg-[#0c5745] text-[#64FFDA] inline-block px-3 py-2 cursor-pointer rounded transition ease-in duration-300">
+      <motion.li variants={resumeVariants} className="border border-[#64FFDA]   hover:bg-[#0c5745] text-[#64FFDA] inline-block px-3 py-2 cursor-pointer rounded transition ease-in duration-300">
         <a
           rel="noreferrer"
           href="https://resume.io/r/dAzgD3MkP"
@@ -40,7 +52,7 @@ const NavItems = ({layout}) => {
         >
           Resume
         </a>
-      </li>
+      </motion.li>
     </ul>
   );
 }

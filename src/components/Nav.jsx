@@ -8,7 +8,7 @@ const Nav = ({track, toggle}) => {
 
   const containerVariants = {
     initial: {
-      y: -500,
+      y: -50,
       opacity: 0
     },
     animate: {
@@ -18,7 +18,7 @@ const Nav = ({track, toggle}) => {
         type: "tween",
         duration: "0.5",
         when: "beforeChildren",
-        staggerChildren: 0.5
+        staggerChildren: 0.2
       },
     },
   };
