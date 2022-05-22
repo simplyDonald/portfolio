@@ -8,10 +8,12 @@ const Nav = ({track, toggle}) => {
 
   const containerVariants = {
     initial: {
-      y: -500
+      y: -500,
+      opacity: 0
     },
     animate: {
       y: 0,
+      opacity: 1,
       transition: {
         type: "tween",
         duration: "0.5",
@@ -23,12 +25,7 @@ const Nav = ({track, toggle}) => {
 
 
   return (
-    <motion.nav 
-      variants={containerVariants} 
-      initial="initial" 
-      animate="animate" 
-      className=" backdrop-blur-sm fixed top-0 left-0 flex justify-between  py-4  px-5 z-10 items-center w-full transition-all ease-in-out duration-500 "
-    >
+    <nav className=" backdrop-blur-sm fixed top-0 left-0 flex justify-between  py-4  px-5 z-10 items-center w-full transition-all ease-in-out duration-500 ">
       <div className="">
         <img
           src="hero-logo.png"
@@ -43,10 +40,15 @@ const Nav = ({track, toggle}) => {
       >
         <Hamburger toggled={track} />
       </div>
-      <div  className="hidden lg:block">
+      <motion.div
+        variants={containerVariants}
+        initial="initial"
+        animate="animate"
+        className="hidden lg:block"
+      >
         <NavItems layout="topNav" />
-      </div>
-    </motion.nav>
+      </motion.div>
+    </nav>
   );
 };
 
