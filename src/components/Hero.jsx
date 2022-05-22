@@ -15,7 +15,7 @@ function Hero() {
         duration: "0.5",
         when: "beforeChildren",
         staggerChildren: 0.2,
-        delay: 2
+        delay: 1.5
       },
     },
   };
