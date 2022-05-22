@@ -1,13 +1,34 @@
 import { Spin as Hamburger } from "hamburger-react";
-import NavItems from "./NavItems";
+import { motion } from "framer-motion";
+import NavItems from "./NavItems";                                       
 
 
 
 const Nav = ({track, toggle}) => {
 
+  const containerVariants = {
+    initial: {
+      y: -500
+    },
+    animate: {
+      y: 0,
+      transition: {
+        type: "tween",
+        duration: "0.5",
+        when: "beforeChildren",
+        staggerChildren: 0.5
+      },
+    },
+  };
+
 
   return (
-    <nav className=" backdrop-blur-sm fixed top-0 left-0 flex justify-between  py-4  px-5 z-10 items-center w-full transition-all ease-in-out duration-500 ">
+    <motion.nav 
+      variants={containerVariants} 
+      initial="initial" 
+      animate="animate" 
+      className=" backdrop-blur-sm fixed top-0 left-0 flex justify-between  py-4  px-5 z-10 items-center w-full transition-all ease-in-out duration-500 "
+    >
       <div className="">
         <img
           src="hero-logo.png"
@@ -22,10 +43,10 @@ const Nav = ({track, toggle}) => {
       >
         <Hamburger toggled={track} />
       </div>
-      <div className="hidden lg:block">
+      <div  className="hidden lg:block">
         <NavItems layout="topNav" />
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
