@@ -12,7 +12,7 @@ function About() {
     // Scroll Animation detection
 
     if (inView) {
-      console.log(`I can see ya!!!!`);
+      
       controls.start("visible");                                                  
     }
   }, [controls, inView]);
