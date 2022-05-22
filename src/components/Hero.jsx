@@ -33,7 +33,7 @@ function Hero() {
         duration: .5
       }
       
-    },
+    }
   };
 
   return (

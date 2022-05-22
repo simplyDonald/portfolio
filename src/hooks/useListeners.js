@@ -1,6 +1,4 @@
 import { useState, useEffect, useCallback } from 'react';
-import { useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
 export default function useListeners(){
 
@@ -8,11 +6,13 @@ export default function useListeners(){
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   // const [pageOffset, setPageOffset] = useState(window.pageYOffset);
 
+  
 
   // useCallback prevents re-renders of the useEffect hook every time the function gets defined
   const toggler = useCallback(()=>{setOpen(!isOpen)},[isOpen])
   
   useEffect(() => {
+
     //detect & record screensize
     const changeWidth = () => {
       setScreenWidth(window.innerWidth);
