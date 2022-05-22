@@ -1,4 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
+import { useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export default function useListeners(){
 
