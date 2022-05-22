@@ -37,7 +37,7 @@ const SideMenu = ({track, toggle}) => {
     },
     animate: {
       opacity: 1,
-      y: 0,
+      y: 0
       
     }
   };
@@ -52,7 +52,7 @@ const SideMenu = ({track, toggle}) => {
       variants={menuVariants}
       initial="initial"
       animate="animate"
-      exit={{ x: 1000, transition: { duration: 0.1 } }}
+      exit={{ x: 1000, transition: { duration: .7 } }}
     >
       <div
         className=" backdrop-blur-md z-100"
