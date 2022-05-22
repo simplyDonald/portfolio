@@ -1,4 +1,4 @@
-export const techStack = [
+const techStack = [
   {
     name: "Pandemic Tracker",
     stack: [
@@ -48,7 +48,7 @@ export const techStack = [
   },
 ];
 
-export const frameworks = [
+const frameworks = [
   {
     name: "Javascript",
     img: "/devlogo/js.png"
@@ -100,7 +100,7 @@ export const frameworks = [
 ];
 
 
-export const socials = [
+const socials = [
   {
     name: "github",
     img: "github-icon.png" ,
@@ -125,3 +125,14 @@ export const socials = [
 
   }
 ];
+
+const items = [
+    { name: "About", link: "#about" },
+    { name: "Projects", link: "#projects" },
+    { name: "TechStack", link: "#tech" },
+    { name: "Contact", link: "#contact" },
+  ];
+
+
+
+export {techStack, frameworks, socials, items}

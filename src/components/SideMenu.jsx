@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import Socials from "./Socials";
-// import { Spin as Hamburger } from "hamburger-react";
 
 
 const SideMenu = ({track, toggle}) => {

@@ -1,14 +1,11 @@
 import { Spin as Hamburger } from "hamburger-react";
+import { items } from "techStack";
+
 
 
 const Nav = ({track, toggle}) => {
   // object for nav links
-  const items = [
-    { name: "About", link: "#about" },
-    { name: "Projects", link: "#projects" },
-    { name: "TechStack", link: "#tech" },
-    { name: "Contact", link: "#contact" },
-  ];
+  
 
  
 
