@@ -1,16 +1,18 @@
 import classNames from "classnames";
 import { motion } from "framer-motion";
-
+import { useCallback } from 'react';
 import { items } from "techStack";
 
 
 const NavItems = ({track,toggle,layout}) => {
   
-  const toggleHandler = (tracker, toggleFn) => {
+
+  const toggleHandler = useCallback((tracker, toggleFn) => {
     if (tracker) {
       toggleFn();
     }
-  };
+  }, []);
+  
   const navClass = classNames("hover:text-[#64FFDA]", "text-white","px-3","cursor-pointer", {
     "inline-block py-2": `${layout}` === "topNav",
     "text-4xl block py-4": `${layout}` === "sideMenu"               
