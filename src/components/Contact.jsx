@@ -1,4 +1,4 @@
-import { socials } from "techStack";
+import Socials from "./Socials";
 
 const Contact = () => {
   return (
@@ -34,24 +34,8 @@ const Contact = () => {
         Say Hi
       </a>
       {/* Social icons */}
-      <div className="lg:hidden p-8 text-[#8892B0] ">
-        {socials.map((item) => {
-          return (
-            <li
-              key={item.name}
-              className="invert w-5 m-2 list-none inline-block"
-            >
-              <a
-                href={item.link}
-                rel="noreferrer"
-                target="_blank"
-                className=" "
-              >
-                <img src={item.img} alt="socials icon" className="" />
-              </a>
-            </li>
-          );
-        })}
+      <div className="lg:hidden p-8">
+        <Socials />
       </div>
     </div>
   );
