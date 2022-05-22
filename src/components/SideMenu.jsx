@@ -23,28 +23,14 @@ const SideMenu = ({track, toggle}) => {
         type: "tween",
         duration: "0.1",
         when: "beforeChildren",
-        staggerChildren: .5
+        staggerChildren: .1
         
       },
     },
   };
 
 
-  const containerVariants = {
-    initial: {
-      opacity: 0,
-    },
-    animate: {
-      opacity: 1,
-      transition: {
-        when: "beforeChildren",
-        staggerChildren: 0.1
-      }
-    }
-  };
-
-
-  const navItemVariants = {
+  const itemVariants = {
     initial: {
       opacity: 0,
       y: -50
@@ -52,12 +38,12 @@ const SideMenu = ({track, toggle}) => {
     animate: {
       opacity: 1,
       y: 0,
-      transition:{
-        duration: .5,
-        
-      }
-    },
+      
+    }
   };
+
+
+  
 
   return (
     <motion.div
@@ -86,15 +72,14 @@ const SideMenu = ({track, toggle}) => {
               <motion.li
                 key={item.name}
                 className="hover:text-[#64FFDA] text-4xl text-white block px-3 py-4 cursor-pointer"
-                variants={containerVariants}
+                variants={itemVariants}
                 onClick={toggle}
               >
-                <motion.a 
-                  variants={navItemVariants} 
+                <a 
                   href={item.link}
                 >
                   {item.name}
-                </motion.a>
+                </a>
               </motion.li>
             ))}
             <li
