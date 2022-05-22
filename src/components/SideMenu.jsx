@@ -1,14 +1,9 @@
 import { motion } from "framer-motion";
 import Socials from "./Socials";
+import { items } from "techStack";
 
 
 const SideMenu = ({track, toggle}) => {
-  const items = [
-    { name: "About", link: "#about" } ,
-    { name: "Projects", link: "#projects" },
-    { name: "TechStack", link: "#tech" },
-    { name: "Contact", link: "#contact" },
-  ];
 
   const menuVariants = {
     initial: {
