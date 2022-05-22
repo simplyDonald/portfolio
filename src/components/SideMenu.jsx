@@ -75,6 +75,7 @@ const SideMenu = ({track, toggle}) => {
   return (
     <motion.div
       className="fixed text-white font-extrabold grid grid-cols-3 grid-flow-col inset-0  z-10"
+      key="sideMenu"
       variants={menuVariants}
       initial="initial"
       animate="animate"
@@ -138,7 +139,7 @@ const SideMenu = ({track, toggle}) => {
                   >
                     <motion.img
                       variants={iconVariants}
-                      whileHover= "onHover"
+                      whileHover="onHover"
                       src={item.img}
                       alt="socials icon"
                       className=""

@@ -86,7 +86,7 @@ function App() {
 
   return (
     <div className="h-full relative">
-      <AnimatePresence>
+      <AnimatePresence >
         {(isOpen) && <SideMenu track={isOpen} toggle={toggler}/>}   
 
       </AnimatePresence>
@@ -99,7 +99,9 @@ function App() {
         <Contact />
         <Footer />
       </div>
-      <Socials />
+      <div className="hidden fixed bottom-0 lg:block left-4 ">
+        <Socials />
+      </div>
       <Mail />
       
       

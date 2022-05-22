@@ -33,6 +33,7 @@ const Contact = () => {
       >
         Say Hi
       </a>
+      {/* Social icons */}
       <div className="lg:hidden p-8 text-[#8892B0] ">
         {socials.map((item) => {
           return (

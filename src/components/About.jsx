@@ -1,4 +1,17 @@
+import { motion } from "framer-motion";
+
 function About() {
+
+  const wordVariants = {
+    initial: {
+      opacity: 0,
+      y: 50,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+    },
+  };
   return (
     <div id="about" className=" grid h-full mb-48 ">
       <blockquote className=" py-20 max-w-sm text-3xl justify-self-center font-body text-[#8892B0]">
@@ -12,7 +25,7 @@ function About() {
       <h2 className=" h-max stroke text-3xl my-8 ml-8">About Me</h2>
 
       <div className="grid grid-cols-1 gap-14 mx-8 leading-5 lg:grid-cols-2 font-body">
-        <div>
+        <motion.div variants={wordVariants} initial="initial" animate="animate">
           <p className="mb-3">
             Hello! My name is Donald and I enjoy creating things that live on
             the internet. My interest in web development started back in 2012
@@ -29,7 +42,7 @@ function About() {
             few technologies I’ve been working with recently: JavaScript (ES6+)
             TypeScript React Eleventy Node.js WordPress
           </p>
-        </div>
+        </motion.div>
         <div className=" place-self-center">
           <img
             className="fofo hover:filter-none transition ease-out delay-700 hover:cursor-pointer"
