@@ -1,4 +1,3 @@
-import NavItems from "./NavItems";
 import Socials from "./Socials";
 
 const Contact = () => {
@@ -38,7 +37,6 @@ const Contact = () => {
       <div className="lg:hidden p-8">
         <Socials />
       </div>
-      <NavItems layout="topNav" />
     </div>
   );
 };
