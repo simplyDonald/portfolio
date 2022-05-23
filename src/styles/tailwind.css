@@ -10,7 +10,29 @@ body, html {
   /* height: 100%; */
   background-color: #0A192F;
   scroll-behavior: smooth;
+  /* custom scrollbar colors */
+  --scrollbarBG: #0A192F;
+  --thumbBG: #495670;
 }
+/* scrollbar width */
+body::-webkit-scrollbar {
+  width: 11px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
 
 .scroll-hide {
   overflow: hidden;

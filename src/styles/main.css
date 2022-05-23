@@ -632,40 +632,6 @@ video {
   --tw-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-.container{
-  width: 100%;
-}
-
-@media (min-width: 640px){
-  .container{
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px){
-  .container{
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px){
-  .container{
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px){
-  .container{
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px){
-  .container{
-    max-width: 1536px;
-  }
-}
-
 .visible{
   visibility: visible;
 }
@@ -689,6 +655,14 @@ video {
   left: 0px;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
+.left-4{
+  left: 1rem;
+}
+
 .-bottom-10{
   bottom: -2.5rem;
 }
@@ -703,14 +677,6 @@ video {
 
 .left-0{
   left: 0px;
-}
-
-.bottom-0{
-  bottom: 0px;
-}
-
-.left-4{
-  left: 1rem;
 }
 
 .z-10{
@@ -737,24 +703,12 @@ video {
   margin: 1.25rem;
 }
 
-.m-1{
-  margin: 0.25rem;
-}
-
-.m-4{
-  margin: 1rem;
-}
-
 .m-2{
   margin: 0.5rem;
 }
 
-.m-3{
-  margin: 0.75rem;
-}
-
-.m-6{
-  margin: 1.5rem;
+.m-4{
+  margin: 1rem;
 }
 
 .mx-auto{
@@ -797,6 +751,10 @@ video {
   margin-top: 0.75rem;
 }
 
+.ml-4{
+  margin-left: 1rem;
+}
+
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -817,32 +775,12 @@ video {
   margin-bottom: 2rem;
 }
 
-.ml-5{
-  margin-left: 1.25rem;
-}
-
-.ml-2{
-  margin-left: 0.5rem;
-}
-
-.ml-4{
-  margin-left: 1rem;
-}
-
-.ml-6{
-  margin-left: 1.5rem;
-}
-
 .block{
   display: block;
 }
 
 .inline-block{
   display: inline-block;
-}
-
-.inline{
-  display: inline;
 }
 
 .flex{
@@ -905,32 +843,16 @@ video {
   width: 1.25rem;
 }
 
-.w-10{
-  width: 2.5rem;
-}
-
-.w-56{
-  width: 14rem;
+.w-80{
+  width: 20rem;
 }
 
 .w-96{
   width: 24rem;
 }
 
-.w-36{
-  width: 9rem;
-}
-
-.w-48{
-  width: 12rem;
-}
-
-.w-64{
-  width: 16rem;
-}
-
-.w-80{
-  width: 20rem;
+.w-10{
+  width: 2.5rem;
 }
 
 .max-w-4xl{
@@ -1042,23 +964,18 @@ video {
   border-width: 1px;
 }
 
-.border-2{
-  border-width: 2px;
-}
-
 .border-\[\#64FFDA\]{
   --tw-border-opacity: 1;
   border-color: rgba(100, 255, 218, var(--tw-border-opacity));
 }
 
-.border-red-600{
-  --tw-border-opacity: 1;
-  border-color: rgba(220, 38, 38, var(--tw-border-opacity));
-}
-
 .bg-\[\#112240\]{
   --tw-bg-opacity: 1;
   background-color: rgba(17, 34, 64, var(--tw-bg-opacity));
+}
+
+.p-8{
+  padding: 2rem;
 }
 
 .p-5{
@@ -1071,10 +988,6 @@ video {
 
 .p-6{
   padding: 1.5rem;
-}
-
-.p-8{
-  padding: 2rem;
 }
 
 .p-4{
@@ -1132,6 +1045,10 @@ video {
   padding-left: 0px;
 }
 
+.pr-8{
+  padding-right: 2rem;
+}
+
 .pb-1{
   padding-bottom: 0.25rem;
 }
@@ -1150,18 +1067,6 @@ video {
 
 .pr-12{
   padding-right: 3rem;
-}
-
-.pl-4{
-  padding-left: 1rem;
-}
-
-.pl-8{
-  padding-left: 2rem;
-}
-
-.pr-8{
-  padding-right: 2rem;
 }
 
 .text-left{
@@ -1210,14 +1115,14 @@ video {
   line-height: 1;
 }
 
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-black{
@@ -1335,18 +1240,6 @@ video {
   transition-duration: 300ms;
 }
 
-.duration-200{
-  transition-duration: 200ms;
-}
-
-.duration-1000{
-  transition-duration: 1000ms;
-}
-
-.duration-700{
-  transition-duration: 700ms;
-}
-
 .duration-500{
   transition-duration: 500ms;
 }
@@ -1369,6 +1262,30 @@ body, html {
   /* height: 100%; */
   background-color: #0A192F;
   scroll-behavior: smooth;
+  /* custom scrollbar colors */
+  --scrollbarBG: #0A192F;
+  --thumbBG: #495670;
+}
+
+/* scrollbar width */
+
+body::-webkit-scrollbar {
+  width: 11px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
 }
 
 .scroll-hide {
@@ -1474,11 +1391,6 @@ body, html {
   color: rgba(100, 255, 218, var(--tw-text-opacity));
 }
 
-.hover\:text-white:hover{
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
-}
-
 .hover\:filter-none:hover{
   -webkit-filter: none;
           filter: none;
@@ -1495,10 +1407,6 @@ body, html {
 
   .lg\:hidden{
     display: none;
-  }
-
-  .lg\:w-9{
-    width: 2.25rem;
   }
 
   .lg\:w-auto{

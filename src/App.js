@@ -22,7 +22,7 @@ function App() {
 
 
   return (
-    <div className="h-full relative">
+    <div className="h-full relative ">
       <AnimatePresence >
         {(isOpen) && <SideMenu track={isOpen} toggle={toggler}/>}   
 
