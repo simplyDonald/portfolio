@@ -10,6 +10,7 @@ const Socials = () => {
       scale: 1.15,
       transition: {
         type: "tween",
+        duration: .15
       },
     },
   };
