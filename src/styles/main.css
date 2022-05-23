@@ -1263,14 +1263,14 @@ body, html {
   background-color: #0A192F;
   scroll-behavior: smooth;
   /* custom scrollbar colors */
-  --scrollbarBG: #0A192F;
-  --thumbBG: #495670;
+  --scrollbarBG: rgba(0, 0, 0, 0);
+  --thumbBG: #495670 ;
 }
 
 /* scrollbar width */
 
 body::-webkit-scrollbar {
-  width: 11px;
+  width: 3px;
 }
 
 body {
