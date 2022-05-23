@@ -1,8 +1,35 @@
 import Socials from "./Socials";
+import { motion } from "framer-motion";
+import useScroll from "hooks/useScroll";
 
 const Contact = () => {
+  const { ref, controls } = useScroll();
+
+  const itemVariants = {
+    hidden: {
+      opacity: 0,
+      y: 50,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "tween",
+        duration: 0.5,
+      },
+    },
+  };
+
+
   return (
-    <div id="contact" className="text-center py-44 grid justify-items-center ">
+    <motion.div
+      id="contact"
+      className="text-center py-44 grid justify-items-center "
+      variants={itemVariants}
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+    >
       <h3 className="text-[#FFD700]">What's next?</h3>
       <h2 className=" text-4xl">Reach out and say Hi</h2>
       <p className="text-[#8892B0] max-w-lg text-center">
@@ -37,7 +64,7 @@ const Contact = () => {
       <div className="lg:hidden p-8">
         <Socials />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
