@@ -1,4 +1,4 @@
-import { Spin as Hamburger } from "hamburger-react";
+import { Slant as Hamburger } from "hamburger-react";
 import { motion } from "framer-motion";
 import NavItems from "./NavItems";                                       
 
