@@ -1,6 +1,9 @@
 import { techStack } from "techStack";
+import { motion } from "framer-motion";
+import useScroll from "hooks/useScroll";
 
 function Projects() {
+  const {ref, controls, itemVariants} = useScroll();
 
   const projects = techStack.map((item) => {
     return (
@@ -53,11 +56,17 @@ function Projects() {
   });
 
   return (
-    <div id="projects" className="h-max mb-48">
-      <h2 className="stroke text-3xl m-8">Some things I've built</h2>
+    <motion.div
+      id="projects"
+      className="h-max mb-48"
+      variants={itemVariants}
+      ref={ref}
+      initial="hidden"              
+      animate={controls}
+    >
+      <h2 className="stroke text-3xl m-8 ">Some things I've built</h2>
       {projects}
-      
-    </div>
+    </motion.div>
   );
 }
 

@@ -1,47 +1,11 @@
 import { motion } from "framer-motion";
-import React, { useEffect } from "react";
-import { useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import useScroll from "hooks/useScroll";
 
 function About() {
 
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
+  const {ref, controls, itemVariants} = useScroll();
 
-  useEffect(() => {
-    // Scroll Animation detection
-
-    if (inView) {
-      
-      controls.start("visible");                                                  
-    }
-  }, [controls, inView]);
-
-    const itemVariants = {
-      hidden: {
-        opacity: 0,
-        y: 50,
-      },
-      visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-          type: "tween",
-          duration: 1,
-          delay: 3
-          
-        },
-      },
-    };
-
-    const quoteVariants = {
-      initial: {
-        opacity: 0
-      },
-      animate: {
-        opacity: 1
-      }
-    }
+  
 
   return (
     <motion.div
@@ -52,7 +16,7 @@ function About() {
       initial="hidden"
       animate={controls}
     >
-      <blockquote variants={quoteVariants} className=" py-20 max-w-sm text-3xl justify-self-center font-body text-[#8892B0]">
+      <blockquote className=" py-20 max-w-sm text-3xl justify-self-center font-body text-[#8892B0]">
         "He had come a long way to this blue lawn, and his dream must have
         seemed so close that he could hardly fail to grasp it."
         <p className=" text-base ">
