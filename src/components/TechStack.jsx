@@ -24,6 +24,20 @@ const TechStack = () => {
       },
     };
 
+    const techVariants = {
+      initial: {
+        opacity: 0,
+        y: -50,
+      },
+      animate: {
+        opacity: 1,
+        y: 0,
+        transition: {
+          ease: "easeIn",
+        },
+      },
+    };
+
   return (
     <motion.div
       id="tech"
@@ -46,13 +60,14 @@ const TechStack = () => {
       >
         <div className=" grid grid-cols-3 gap-0 text-center mt-8 justify-items-center lg:grid-cols-6 w-96 lg:w-auto mx-auto">
           {frameworks.map((item) => (
-            <li
+            <motion.li
               key={item.name}
               className="fofo hover:filter-none w-10 m-4 transition ease-in duration-300"
+              variants={techVariants}
             >
               {item.name}
               <img src={item.img} alt="" />
-            </li>
+            </motion.li>
           ))}
         </div>
       </motion.ul>
