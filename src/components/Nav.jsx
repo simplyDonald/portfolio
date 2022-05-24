@@ -38,16 +38,12 @@ const Nav = ({track, toggle}) => {
 
   return (
     <nav className=" backdrop-blur-sm fixed top-0 left-0 flex justify-between  py-4  px-5 z-10 items-center w-full transition-all ease-in-out duration-500 ">
-      <div className="">
-        <a
-          rel="noreferrer"
-          href="https://donaldabuah.com"
-          
-        >
+      <div className={track ? "hidden" : " w-16 p-2 invert rotate-12"}>
+        <a rel="noreferrer" href="https://donaldabuah.com">
           <img
-            src="hero-logo.png"
-            alt="diamond logo"
-            className={track ? "hidden" : " w-20 h-20 p-2 invert rotate-12"}
+            src="compass.svg"
+            alt="compass logo"
+            className=""
           />
         </a>
       </div>

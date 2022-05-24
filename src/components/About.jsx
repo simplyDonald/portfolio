@@ -36,12 +36,12 @@ function About() {
             freely when there are no inhibitions. My interest in web development
             started back in 2017 when my friends and I won a pitch competition
             sponsored by the world bank for a tech based solution in healthcare.
-            Fast-forwrad to today I've been fortunate to work on some cool and challenging projects. I also enjoy exploring ideas in data
+            Fast-forward to today, I've been fortunate to work on some cool and challenging projects. I also enjoy exploring insights from data
             analytics and blockchain technology. <br />
           </p>
           <p>
             Outside work i'm always down for some chess and a cup of tea. I
-            might also try to convince you we're living in a simulation.
+            might also try to convince you that we're all in a simulation.
           </p>
         </div>
         <div className=" place-self-center">
