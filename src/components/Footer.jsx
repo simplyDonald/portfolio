@@ -17,9 +17,28 @@ const Footer = () => {
             d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
           />
         </svg>
-      </span>{" "}
+      </span>
       from Toronto
       <img src="toronto.png" alt="toronto icon" className="w-8 invert" />
+      <small>
+        Photo by:
+        <a
+          href="https://unsplash.com/@theherregods_loppa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          className="italic"
+        >
+          Natalie Herregods
+        </a>
+        -on Unsplash
+      </small>
+      <small>
+        Inspiration:
+        <cite>
+          <a href="https://brittanychiang.com/">Brittany Chiang</a>
+        </cite>
+      </small>
+      <small>
+        Designed and developed by <a href="https://donaldabuah.com/" className="italic">Donald Abuah</a>
+      </small>
     </div>
   );
 }
