@@ -19,7 +19,13 @@ const Footer = () => {
         </svg>
       </span>
       from Toronto
-      <img src="toronto.png" alt="toronto icon" className="w-8 invert" />
+      <img src="toronto.png" alt="toronto icon" className="w-8 invert pb-2" />
+      <small>
+        Designed and developed by{" "}
+        <a href="https://donaldabuah.com/" className="italic">
+          Donald Abuah
+        </a>
+      </small>
       <small>
         Photo by:
         <a
@@ -35,9 +41,6 @@ const Footer = () => {
         <cite>
           <a href="https://brittanychiang.com/">Brittany Chiang</a>
         </cite>
-      </small>
-      <small>
-        Designed and developed by <a href="https://donaldabuah.com/" className="italic">Donald Abuah</a>
       </small>
     </div>
   );
