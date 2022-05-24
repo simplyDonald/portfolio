@@ -45,6 +45,9 @@ const Nav = ({track, toggle}) => {
             alt="compass logo"
             className={track ? "hidden" : " w-16 p-2 invert rotate-12"}
           />
+
+          {/* svg logo */}
+          
         </a>
       </div>
 

@@ -892,6 +892,12 @@ video {
           transform: var(--tw-transform);
 }
 
+.rotate-2{
+  --tw-rotate: 2deg;
+  -webkit-transform: var(--tw-transform);
+          transform: var(--tw-transform);
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
