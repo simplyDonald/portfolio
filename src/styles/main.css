@@ -1368,6 +1368,36 @@ body::-webkit-scrollbar-thumb {
   content: '';
 }
 
+.selection\:bg-pink-300 *::selection{
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 168, 212, var(--tw-bg-opacity));
+}
+
+.selection\:bg-\[\#8892B0\] *::selection{
+  --tw-bg-opacity: 1;
+  background-color: rgba(136, 146, 176, var(--tw-bg-opacity));
+}
+
+.selection\:bg-\[\#233554\] *::selection{
+  --tw-bg-opacity: 1;
+  background-color: rgba(35, 53, 84, var(--tw-bg-opacity));
+}
+
+.selection\:bg-pink-300::selection{
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 168, 212, var(--tw-bg-opacity));
+}
+
+.selection\:bg-\[\#8892B0\]::selection{
+  --tw-bg-opacity: 1;
+  background-color: rgba(136, 146, 176, var(--tw-bg-opacity));
+}
+
+.selection\:bg-\[\#233554\]::selection{
+  --tw-bg-opacity: 1;
+  background-color: rgba(35, 53, 84, var(--tw-bg-opacity));
+}
+
 .before\:content-\[\'-\'\]::before{
   content: '-';
 }
