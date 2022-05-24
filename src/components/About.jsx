@@ -17,11 +17,9 @@ function About() {
       animate={controls}
     >
       <blockquote className=" py-20 max-w-sm text-3xl justify-self-center font-body text-[#8892B0]">
-        "He had come a long way to this blue lawn, and his dream must have
-        seemed so close that he could hardly fail to grasp it."
+        "Whatever happens here trust your heart, It's as true as any compass"
         <p className=" text-base ">
-          <cite className=" before:content-['-']">The Great Gatsby</cite> by F.
-          Scott Fitzgerald
+          <cite className=" before:content-['-']">Dean Koontz</cite> 
         </p>
       </blockquote>
       <h2 className=" h-max stroke text-3xl my-8 ml-8">About Me</h2>
