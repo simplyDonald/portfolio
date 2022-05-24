@@ -30,19 +30,18 @@ function About() {
         <div>
           <p className="mb-3">
             Hello! My name is Donald and I enjoy creating things that live on
-            the internet. My interest in web development started back in 2012
-            when I decided to try editing custom Tumblr themes — turns out
-            hacking together a custom reblog button taught me a lot about HTML &
-            CSS! Fast-forward to today, and I’ve had the privilege of working at
-            an advertising agency, a start-up, a huge corporation, and a
-            student-led design studio. My main focus these days is building
-            accessible, inclusive products and digital experiences .
+            the internet. I have a passion for exploring, learning, and
+            experiencing new things. I'm a firm believer in taking the path less
+            travelled and freeing oneself from conformity because ideas roam
+            freely when there are no inhibitions. My interest in web development
+            started back in 2017 when my friends and I won a pitch competition
+            sponsored by the world bank for a tech based solution in healthcare.
+            Fast-forwrad to today I've been fortunate to work on some cool and challenging projects. I also enjoy exploring ideas in data
+            analytics and blockchain technology. <br />
           </p>
           <p>
-            I also recently launched a course that covers everything you need to
-            build a web app with the Spotify API using Node & React. Here are a
-            few technologies I’ve been working with recently: JavaScript (ES6+)
-            TypeScript React Eleventy Node.js WordPress
+            Outside work i'm always down for some chess and a cup of tea. I
+            might also try to convince you we're living in a simulation.
           </p>
         </div>
         <div className=" place-self-center">
