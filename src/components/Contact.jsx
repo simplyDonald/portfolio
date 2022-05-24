@@ -15,7 +15,7 @@ const Contact = () => {
       y: 0,
       transition: {
         type: "tween",
-        duration: 0.5,
+        duration: 2,
       },
     },
   };

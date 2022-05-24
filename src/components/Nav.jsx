@@ -32,7 +32,7 @@ const Nav = ({track, toggle}) => {
       y: 0,
       opacity: 1,
       duration: .2
-    },
+    }
   };
 
 

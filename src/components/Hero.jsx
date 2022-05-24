@@ -68,7 +68,7 @@ function Hero() {
           className="text-[#d8f3dc] text-base pl-2 leading-6 max-w-lg mt-3 font-body"
           variants={itemVariants}
         >
-          I’m a software developer specializing in creating easy to use web
+          I’m a software developer specializing in creating easy-to-use web
           experiences with engaging and appealing design.
         </motion.p>
       </motion.div>
