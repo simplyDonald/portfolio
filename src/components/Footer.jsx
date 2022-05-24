@@ -21,27 +21,35 @@ const Footer = () => {
       from Toronto
       <img src="toronto.png" alt="toronto icon" className="w-8 invert pb-2" />
       <small>
-        Designed and developed by{" "}
+        Designed and built by:{" "}
         <a href="https://donaldabuah.com/" className="italic">
           Donald Abuah
         </a>
       </small>
       <small>
-        Photo by:
+        Photo by:{" "}
         <a
           href="https://unsplash.com/@theherregods_loppa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          rel="noreferrer"
+          target={"_blank"}
           className="italic"
         >
           Natalie Herregods
-        </a>
-        -on Unsplash
+        </a>{" "}
+        on Unsplash
       </small>
-      <small>
-        Inspiration:
+      {/* <small>
+        Inspiration:{" "}
         <cite>
-          <a href="https://brittanychiang.com/">Brittany Chiang</a>
+          <a
+            href="https://brittanychiang.com/"
+            rel="noreferrer"
+            target={"_blank"}
+          >
+            Brittany Chiang
+          </a>
         </cite>
-      </small>
+      </small> */}
     </div>
   );
 }
