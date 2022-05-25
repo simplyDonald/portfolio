@@ -29,7 +29,7 @@ function App() {
       </AnimatePresence>
       <Nav track={isOpen} toggle={toggler} />
       <Hero />
-      <div className="h-max text-white mx-auto  my-6 max-w-4xl">
+      <div className="h-max text-white mx-auto  my-6 max-w-4xl border-2 border-red-60">
         <About />
         <Projects />
         <TechStack />

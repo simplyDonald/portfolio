@@ -41,7 +41,7 @@ const TechStack = () => {
   return (
     <motion.div
       id="tech"
-      className="h-full mb-48 flex flex-col"
+      className="h-full mb-24 flex flex-col"
       variants={itemVariants}
       ref={ref}
       initial="hidden"

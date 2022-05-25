@@ -779,6 +779,10 @@ video {
   margin-bottom: 2rem;
 }
 
+.mb-24{
+  margin-bottom: 6rem;
+}
+
 .block{
   display: block;
 }
@@ -999,9 +1003,18 @@ video {
   border-width: 1px;
 }
 
+.border-2{
+  border-width: 2px;
+}
+
 .border-\[\#64FFDA\]{
   --tw-border-opacity: 1;
   border-color: rgba(100, 255, 218, var(--tw-border-opacity));
+}
+
+.border-red-600{
+  --tw-border-opacity: 1;
+  border-color: rgba(220, 38, 38, var(--tw-border-opacity));
 }
 
 .bg-\[\#112240\]{
@@ -1062,6 +1075,16 @@ video {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-24{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .pl-20{

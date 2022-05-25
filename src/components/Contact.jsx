@@ -24,7 +24,7 @@ const Contact = () => {
   return (
     <motion.div
       id="contact"
-      className="text-center py-44 grid justify-items-center "
+      className="text-center py-16 grid justify-items-center "
       variants={itemVariants}
       ref={ref}
       initial="hidden"
