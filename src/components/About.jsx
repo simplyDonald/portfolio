@@ -16,7 +16,7 @@ function About() {
       initial="hidden"
       animate={controls}
     >
-      <blockquote className=" py-20 max-w-sm text-3xl justify-self-center font-body text-[#8892B0]">
+      <blockquote className=" py-20 max-w-sm text-3xl justify-self-center font-body text-[#8892B0] text-center">
         "Whatever happens here trust your heart, It's as true as any compass"
         <p className=" text-base ">
           <cite className=" before:content-['-']">Dean Koontz</cite> 
