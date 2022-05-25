@@ -38,40 +38,45 @@ function Hero() {
 
   return (
     <div className="text-green-700 bg">
-      <motion.div
-        className="flex flex-col justify-center items-start h-screen lg:pl-64 pl-20 pb-48"
-        variants={containerVariants}
-        initial="initial"
-        animate="animate"
-      >
-        <motion.span 
-          variants={itemVariants} 
-          className="text-[#FFD700] text-sm p-5 pl-2 text-white"
+      <div className="grid h-screen items-center justify-center">
+        <motion.div
+          className="grid     "
+          variants={containerVariants}
+          initial="initial"
+          animate="animate"
         >
-          Hi, my name is
-        </motion.span>
-        <motion.p 
-          className="text-8xl font-black text-[#6EBD9E] "
-          variants={itemVariants}
-        >
-          Donald
-          <span className="text-[#FFD700] y pl-0 font-sans"> Abuah.</span>{" "}
-        </motion.p>
-        <motion.p
-          variants={itemVariants}
-          className="text-white text-3xl pl-2 font-body"
-        >
-          <span className="italic">FullStack</span>{" "}
-          <span className="font-semibold"> Software Developer</span>
-        </motion.p>
-        <motion.p 
-          className="text-[#d8f3dc] text-base pl-2 leading-6 max-w-lg mt-3 font-body"
-          variants={itemVariants}
-        >
-          I’m a software developer specializing in creating easy-to-use web
-          experiences with engaging and appealing design.
-        </motion.p>
-      </motion.div>
+          <motion.span
+            variants={itemVariants}
+            className="text-[#FFD700] text-sm p-5 pl-2 text-white"
+          >
+            Hi, my name is
+          </motion.span>
+          <motion.p
+            className="text-8xl font-black text-[#6EBD9E] "
+            variants={itemVariants}
+          >
+            Donald
+            <span className="text-[#FFD700] y pl-0 font-sans">
+              {" "}
+              Abuah.
+            </span>{" "}
+          </motion.p>
+          <motion.p
+            variants={itemVariants}
+            className="text-white text-3xl pl-2 font-body"
+          >
+            <span className="italic">FullStack</span>{" "}
+            <span className="font-semibold"> Software Developer</span>
+          </motion.p>
+          <motion.p
+            className="text-[#d8f3dc] text-base pl-2 leading-6 max-w-lg mt-3 font-body"
+            variants={itemVariants}
+          >
+            I’m a software developer specializing in creating easy-to-use web
+            experiences with engaging and appealing design.
+          </motion.p>
+        </motion.div>
+      </div>
     </div>
   );
 }
