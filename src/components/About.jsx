@@ -10,7 +10,7 @@ function About() {
   return (
     <motion.div
       id="about"
-      className=" grid h-full mb-48 border-2 border-red-600 "
+      className=" grid h-full mb-28 border-2 border-red-600 "
       variants={itemVariants}
       ref={ref}
       initial="hidden"

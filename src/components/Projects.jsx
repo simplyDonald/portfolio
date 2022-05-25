@@ -58,7 +58,7 @@ function Projects() {
   return (
     <motion.div
       id="projects"
-      className="h-max mb-48"
+      className="h-max mb-28"
       variants={itemVariants}
       ref={ref}
       initial="hidden"              
