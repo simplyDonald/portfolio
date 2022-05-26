@@ -11,6 +11,7 @@ const useScroll = () => {
     // Scroll Animation detection
 
     if (inView) {
+      console.log(`I see ya!!!`);
       controls.start("visible");                                                  
     }
   }, [controls, inView]);

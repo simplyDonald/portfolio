@@ -3,7 +3,7 @@ import useScroll from "hooks/useScroll";
 
 const Footer = () => {
 
-  const { ref, controls, itemVariants } = useScroll();
+  const { ref, controls} = useScroll();
 
   const svgVariants = {
     hidden: {
@@ -16,18 +16,17 @@ const Footer = () => {
     }
   }
 
-  const pitemVariants = {
+  const itemVariants = {
     hidden: {
       opacity: 0,
-      // y: 50,
+      y: 50,
     },
     visible: {
       opacity: 1,
-      // y: 0,
+      y: 0,
       transition: {
         type: "tween",
-        duration: 1,
-        delay: 0.3,
+        duration: 2,
         when: "beforeChildren"
       },
     },
@@ -52,8 +51,9 @@ const Footer = () => {
     <motion.div
       className=" text-xs grid justify-items-center font-body"
       ref={ref}
+      initial="hidden"
       animate={controls}
-      variants={pitemVariants}
+      variants={itemVariants}
     >
       with
       <span className="hover:text-red-600">
@@ -65,8 +65,8 @@ const Footer = () => {
           stroke="currentColor"
           strokeWidth="2"
           variants={svgVariants}
-          initial="hidden"
-          animate="visible"
+          // initial="hidden"
+          // animate="visible"
         >
           <motion.path
             variants={compassVariants}
