@@ -55,7 +55,7 @@ const Footer = () => {
       animate={controls}
       variants={itemVariants}
     >
-      with *
+      with
       <span className="hover:text-red-600">
         <motion.svg
           xmlns="http://www.w3.org/2000/svg"
