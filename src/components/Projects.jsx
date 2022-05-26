@@ -9,7 +9,7 @@ function Projects() {
     return (
       <div
         key={item.name}
-        className="relative flex mb-4 h-max justify-center lg:justify-start border-2 border-red-500  min-h-full"
+        className="relative flex mb-4  justify-center lg:justify-start border-2 border-red-500  min-h-full"
       >
         <div className="w-6/12 h-80 text-center opacity-25 lg:opacity-100">
           <img
