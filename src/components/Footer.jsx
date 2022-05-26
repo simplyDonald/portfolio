@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import useScroll from "hooks/useScroll";
 
 const Footer = () => {
+
+  const { ref, controls, itemVariants } = useScroll();
 
   const svgVariants = {
     hidden: {
@@ -9,9 +12,27 @@ const Footer = () => {
     },
     visible: {
       opacity: 1,
-      rotate: 0                                       
+      rotate: 0 
     }
   }
+
+  const pitemVariants = {
+    hidden: {
+      opacity: 0,
+      // y: 50,
+    },
+    visible: {
+      opacity: 1,
+      // y: 0,
+      transition: {
+        type: "tween",
+        duration: 1,
+        delay: 0.3,
+        when: "beforeChildren"
+      },
+    },
+  };
+
 
   const compassVariants = {
     hidden: {
@@ -28,7 +49,12 @@ const Footer = () => {
     }
   }
   return (
-    <div className=" text-xs grid justify-items-center font-body">
+    <motion.div
+      className=" text-xs grid justify-items-center font-body"
+      ref={ref}
+      animate={controls}
+      variants={pitemVariants}
+    >
       with
       <span className="hover:text-red-600">
         <motion.svg
@@ -43,7 +69,7 @@ const Footer = () => {
           animate="visible"
         >
           <motion.path
-          variants={compassVariants}
+            variants={compassVariants}
             strokeLinecap="round"
             strokeLinejoin="round"
             d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
@@ -200,7 +226,7 @@ const Footer = () => {
         <g></g>
         <g></g>
       </motion.svg> */}
-    </div>
+    </motion.div>
   );
 }
  
