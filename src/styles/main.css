@@ -1377,7 +1377,7 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen  and (max-width: 767px){
   html {
-    font-size:85%;
+    font-size:80%;
   }
 }
 

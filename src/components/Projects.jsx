@@ -19,7 +19,7 @@ function Projects() {
           />
         </div>
 
-        <div className="w-2/4 h-max font-body  grid grid-cols-1 lg:right-14 absolute  ">
+        <div className="w-2/4 min-h-full h-max font-body  grid grid-cols-1 lg:right-14 absolute  ">
           <h2 className=" mt-2 text-sm text-[#64FFDA] justify-self-end title">
             Featured Project
           </h2>
