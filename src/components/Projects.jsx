@@ -9,9 +9,9 @@ function Projects() {
     return (
       <div
         key={item.name}
-        className="relative flex mb-4  justify-center lg:justify-start"
+        className="relative grid grid-cols-12 grid-rows-1 mb-10 h-fit"
       >
-        <div className="w-6/12 h-80 text-center opacity-25 lg:opacity-100">
+        <div className="col-start-3 col-end-11 lg:col-start-1 lg:col-end-8 text-center opacity-25 lg:opacity-100 row-span-1 row-start-1">
           <img
             src={item.img}
             alt={`screenshot of ${item.name} page`}
@@ -19,7 +19,7 @@ function Projects() {
           />
         </div>
 
-        <div className="w-2/4 h-max font-body  grid grid-cols-1 lg:right-14 absolute  ">
+        <div className="col-start-3 col-end-11 row-start-1 font-body  grid grid-cols-1 lg:col-start-7 lg:col-end-13 z-10  ">
           <h2 className=" mt-2 text-sm text-[#64FFDA] justify-self-end title">
             Featured Project
           </h2>
