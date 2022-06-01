@@ -767,10 +767,6 @@ video {
   margin-left: 1rem;
 }
 
-.mb-4{
-  margin-bottom: 1rem;
-}
-
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -1386,13 +1382,13 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen  and (max-width: 767px){
   html {
-    font-size:80%;
+    font-size:95%;
   }
 }
 
 @media only screen  and (max-width: 598px){
   html {
-    font-size:70%;
+    font-size:90%;
   }
 }
 
