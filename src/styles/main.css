@@ -1384,17 +1384,17 @@ body::-webkit-scrollbar-thumb {
 
 /* responsive font scale for small screens */
 
-@media only screen  and (max-width: 767px){
+/* @media only screen  and (max-width: 767px){
   html {
-    font-size:95%;
+    font-size:98%;
   }
 }
 
 @media only screen  and (max-width: 598px){
   html {
-    font-size:90%;
+    font-size:95%;
   }
-}
+} */
 
 .selection\:bg-\[\#233554\] *::selection{
   --tw-bg-opacity: 1;
