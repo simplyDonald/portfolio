@@ -26,7 +26,7 @@ const SideMenu = ({track, toggle}) => {
 
   return (
     <motion.div
-      className="fixed text-white font-extrabold grid grid-cols-3 grid-flow-col inset-0  z-10"
+      className="fixed text-white font-extrabold grid grid-cols-3 grid-flow-col inset-0 z-20"
       key="sideMenu"
       variants={menuVariants}
       initial="initial"
