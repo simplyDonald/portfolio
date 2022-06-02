@@ -815,12 +815,12 @@ video {
   display: none;
 }
 
-.h-6{
-  height: 1.5rem;
-}
-
 .h-full{
   height: 100%;
+}
+
+.h-6{
+  height: 1.5rem;
 }
 
 .h-screen{
@@ -982,12 +982,12 @@ video {
   background-color: rgba(17, 34, 64, var(--tw-bg-opacity));
 }
 
-.p-2{
-  padding: 0.5rem;
-}
-
 .p-8{
   padding: 2rem;
+}
+
+.p-2{
+  padding: 0.5rem;
 }
 
 .p-5{
@@ -1089,11 +1089,6 @@ video {
   font-family: 'Expletus Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1107,6 +1102,11 @@ video {
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .text-sm{
@@ -1386,13 +1386,13 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen  and (max-width: 767px){
   html {
-    font-size:80%;
+    font-size:95%;
   }
 }
 
 @media only screen  and (max-width: 598px){
   html {
-    font-size:70%;
+    font-size:90%;
   }
 }
 
