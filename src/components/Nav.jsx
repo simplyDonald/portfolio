@@ -41,7 +41,7 @@ const Nav = ({track, toggle}) => {
       <div className="">
         <a rel="noreferrer" href="https://donaldabuah.com">
           <img
-            src="compass.svg"
+            src="compass-new.svg"
             alt="compass logo"
             className={track ? "hidden" : " w-16 p-2 invert rotate-12"}
           />
