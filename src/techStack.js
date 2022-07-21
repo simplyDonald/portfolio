@@ -133,7 +133,7 @@ const items = [
     { name: "Projects", link: "#projects" },
     { name: "TechStack", link: "#tech" },
     { name: "Contact", link: "#contact" },
-    { name: "Resume", link: "https://resume.io/r/dAzgD3MkP", target: "blank" }
+    { name: "Resume", link: "https://resume.creddle.io/resume/coanj0054zk", target: "blank" }
 
   ];
 
