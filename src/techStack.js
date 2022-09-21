@@ -97,6 +97,14 @@ const frameworks = [
   {
     name: "Tailwind",
     img: "devlogo/tailwind-css-icon.png"                                             
+  },
+  {
+    name: "Typescript",
+    img: "devlogo/typescript.png"
+  },
+  {
+    name: "VSCode",
+    img: "devlogo/visualstudio.png"
   }
 ];
 
