@@ -109,6 +109,10 @@ const frameworks = [
   {
     name: "MongoDb",
     img: "devlogo/mongodb.png"
+  },
+  {
+    name: "Express",
+    img: "devlogo/express1.png"
   }
 ];
 
