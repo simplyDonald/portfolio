@@ -105,6 +105,10 @@ const frameworks = [
   {
     name: "VSCode",
     img: "devlogo/visualstudio.png"
+  },
+  {
+    name: "MongoDb",
+    img: "devlogo/mongodb.png"
   }
 ];
 
