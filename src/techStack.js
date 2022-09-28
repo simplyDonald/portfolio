@@ -113,6 +113,14 @@ const frameworks = [
   {
     name: "Express",
     img: "devlogo/express1.png"
+  },
+    {
+    name: "Docker",
+    img: "devlogo/discord.png"
+  },
+    {
+    name: "Slack",
+    img: "devlogo/slack.png"
   }
 ];
 
