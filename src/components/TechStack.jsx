@@ -39,9 +39,9 @@ const TechStack = () => {
     };
 
   return (
-    <motion.div
+    <motion.section
       id="tech"
-      className="h-full mb-24 flex flex-col"
+      className="h-full relative mb-24 flex flex-col z-10"
       variants={itemVariants}
       ref={ref}
       initial="hidden"
@@ -58,7 +58,7 @@ const TechStack = () => {
         initial="initial"
         animate="animate"
       >
-        <div className=" grid grid-cols-3 gap-0 text-center mt-8 justify-items-center lg:grid-cols-6 w-96 lg:w-auto mx-auto">
+        <div className=" grid grid-cols-3 gap-0 text-center mt-8 justify-items-center lg:grid-cols-6 w-96 lg:w-auto mx-auto z-10">
           {frameworks.map((item) => (
             <motion.li
               key={item.name}
@@ -71,7 +71,8 @@ const TechStack = () => {
           ))}
         </div>
       </motion.ul>
-    </motion.div>
+     
+    </motion.section>
   );
 }
  

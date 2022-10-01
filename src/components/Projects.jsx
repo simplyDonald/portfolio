@@ -7,7 +7,7 @@ function Projects() {
 
   const projects = techStack.map((item) => {
     return (
-      <div
+      <article
         key={item.name}
         className="relative grid grid-cols-12 grid-rows-1 mb-10 h-fit  hover:drop-shadow-3xl hover:animate-pulse"
         // initial={{ opacity: 0, x: -200 }}
@@ -15,7 +15,7 @@ function Projects() {
         // viewport={{ once: true }}
       >
         <motion.div
-          className="col-start-3 col-end-11 lg:col-start-1 lg:col-end-8 text-center opacity-25 lg:opacity-100 row-span-1 row-start-1"
+          className="col-start-3 col-end-11 lg:col-start-1 lg:col-end-8 text-center opacity-25 lg:opacity-100 row-span-1 row-start-1 "
           initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
@@ -66,12 +66,12 @@ function Projects() {
             />
           </a>
         </motion.div>
-      </div>
+      </article>
     );
   });
 
   return (
-    <motion.div
+    <motion.section
       id="projects"
       className="h-max mb-28"
       // variants={itemVariants}
@@ -84,7 +84,7 @@ function Projects() {
     >
       <h2 className="stroke text-3xl m-8 ">Some things I've built</h2>
       {projects}
-    </motion.div>
+    </motion.section>
   );
 }
 

@@ -8,7 +8,7 @@ function About() {
   
 
   return (
-    <motion.div
+    <motion.section
       id="about"
       className=" grid h-full mb-28 "
       // variants={itemVariants}
@@ -59,7 +59,7 @@ function About() {
           />
         </div>
       </div>
-    </motion.div>
+    </motion.section>
   );
 }
 

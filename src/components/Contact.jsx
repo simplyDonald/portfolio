@@ -15,16 +15,16 @@ const Contact = () => {
       y: 0,
       transition: {
         type: "tween",
-        duration: 2,
+        duration: 1,
       },
     },
   };
 
 
   return (
-    <motion.div
+    <motion.section
       id="contact"
-      className="text-center py-16 grid justify-items-center "
+      className="text-center py-16 grid justify-items-center z-10"
       variants={itemVariants}
       ref={ref}
       initial="hidden"
@@ -64,7 +64,7 @@ const Contact = () => {
       <div className="lg:hidden p-8">
         <Socials />
       </div>
-    </motion.div>
+    </motion.section>
   );
 };
 

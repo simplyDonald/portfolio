@@ -27,19 +27,23 @@ function App() {
         {(isOpen) && <SideMenu track={isOpen} toggle={toggler}/>}   
 
       </AnimatePresence>
-      <Nav track={isOpen} toggle={toggler} />
+      <header>
+        <Nav track={isOpen} toggle={toggler} />
+      </header>
       <Hero />
-      <div className="h-max text-white mx-auto  my-6 max-w-4xl">
+      <main className="h-max text-white mx-auto  my-6 max-w-4xl">
         <About />
         <Projects />
         <TechStack />
         <Contact />
         <Footer />
-      </div>
+      </main>
+       
       <div className="hidden fixed bottom-0 lg:block left-4 ">
         <Socials />
       </div>
       <Mail />
+       
       
       
     </div>

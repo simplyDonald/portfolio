@@ -37,7 +37,7 @@ function Hero() {
   };
 
   return (
-    <div className="text-green-700 bg">
+    <section className="text-green-700 bg">
       <div className="grid h-screen items-center justify-center lg:justify-start lg:pl-64">
         <motion.div
           className="grid "
@@ -77,7 +77,7 @@ function Hero() {
           </motion.p>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -48,7 +48,7 @@ const Footer = () => {
     }
   }
   return (
-    <motion.div
+    <motion.footer
       className=" text-xs grid justify-items-center font-body"
       ref={ref}
       initial="hidden"
@@ -226,7 +226,7 @@ const Footer = () => {
         <g></g>
         <g></g>
       </motion.svg> */}
-    </motion.div>
+    </motion.footer>
   );
 }
  
