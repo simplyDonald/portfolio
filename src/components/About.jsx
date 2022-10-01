@@ -11,10 +11,10 @@ function About() {
     <motion.div
       id="about"
       className=" grid h-full mb-28 "
-      variants={itemVariants}
-      ref={ref}
-      initial="hidden"
-      animate={controls}
+      // variants={itemVariants}
+      // ref={ref}
+      // initial="hidden"
+      // animate={controls}
     >
       <blockquote className=" py-20 max-w-sm text-3xl justify-self-center font-body text-[#8892B0] text-center">
         "Whatever happens here trust your heart, It's as true as any compass"
@@ -25,7 +25,11 @@ function About() {
       <h2 className=" h-max stroke text-3xl my-8 ml-8">About Me</h2>
 
       <div className="grid grid-cols-1 gap-14 mx-8 leading-5 lg:grid-cols-2 font-body">
-        <div>
+        <motion.div
+          initial={{ x: -200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
           <p className="mb-3">
             Hello! My name is Donald and I enjoy creating things that live on
             the internet. I have a passion for exploring, learning, and
@@ -42,14 +46,16 @@ function About() {
             Outside work i'm always down for some chess and a cup of tea. I
             might also try to convince you that we're all in a simulation.
           </p>
-        </div>
+        </motion.div>
         <div className=" place-self-center">
-          <img
-            className="fofo hover:filter-none transition ease-out delay-700 hover:cursor-pointer"
+          <motion.img
+            initial={{ x: 200, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{once: true}}
+            transition={{ duration: 1}}
+            className="fofo hover:filter-none transition ease-out delay-700 hover:cursor-pointer object-cover w-72 h-72"
             src="gitpicnice.jpg"
             alt="donald_profile_pic"
-            width="290"
-            height="290"
           />
         </div>
       </div>

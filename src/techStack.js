@@ -116,7 +116,7 @@ const frameworks = [
   },
     {
     name: "Docker",
-    img: "devlogo/discord.png"
+    img: "devlogo/docker.png"
   },
     {
     name: "Slack",
