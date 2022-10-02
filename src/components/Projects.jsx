@@ -78,11 +78,12 @@ function Projects() {
       // ref={ref}
       // animate={controls}
       // initial={{opacity: 0, x: -200}}
-      // whileInView={{opacity: 1, x: 0}}                                                                                                                                                                                                                                                
-      // viewport={{once: true}}   
-
+      // whileInView={{opacity: 1, x: 0}}
+      // viewport={{once: true}}
     >
-      <h2 className="stroke text-3xl m-8 ">Some things I've built</h2>
+      <h2 className="stroke text-xl m-8 md:text-3xl">
+        Some things I've built
+      </h2>
       {projects}
     </motion.section>
   );

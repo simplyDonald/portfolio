@@ -16,13 +16,13 @@ function About() {
       // initial="hidden"
       // animate={controls}
     >
-      <blockquote className=" py-20 max-w-sm text-3xl justify-self-center font-body text-[#8892B0] text-center">
+      <blockquote className=" py-20 max-w-sm text-xl justify-self-center font-body text-[#8892B0] text-center md:text-3xl">
         "Whatever happens here trust your heart, It's as true as any compass"
         <p className=" text-base ">
           <cite className=" before:content-['-']">Dean Koontz</cite>
         </p>
       </blockquote>
-      <h2 className=" h-max stroke text-3xl my-8 ml-8">About Me</h2>
+      <h2 className=" h-max stroke text-xl my-8 ml-8 md:text-3xl">About Me</h2>
 
       <div className="grid grid-cols-1 gap-14 mx-8 leading-5 lg:grid-cols-2 font-body">
         <motion.div
@@ -51,8 +51,8 @@ function About() {
           <motion.img
             initial={{ x: 200, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            viewport={{once: true}}
-            transition={{ duration: 1}}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
             className="fofo hover:filter-none transition ease-out delay-700 hover:cursor-pointer object-cover w-72 h-72"
             src="gitpicnice.jpg"
             alt="donald_profile_pic"

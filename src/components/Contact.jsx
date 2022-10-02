@@ -31,8 +31,8 @@ const Contact = () => {
       animate={controls}
     >
       <h3 className="text-[#FFD700]">What's next?</h3>
-      <h2 className=" text-4xl">Reach out and say Hi</h2>
-      <p className="text-[#8892B0] max-w-lg text-center">
+      <h2 className="text-xl md:text-3xl">Reach out and say Hi</h2>
+      <p className="text-[#8892B0] max-w-xs text-center">
         Currently open to work opportunities. Want to say hi or collaborate? Go
         ahead I'm always happy to share ideas.
         <span className="justify-items-center grid">

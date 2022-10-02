@@ -47,8 +47,8 @@ const TechStack = () => {
       initial="hidden"
       animate={controls}
     >
-      <h2 className=" text-3xl mt-8 ml-8 text-center">
-        Some tools in my toolbox
+      <h2 className=" text-xl mt-8 ml-8 text-center md:text-3xl">
+        Some of my tools
       </h2>
       <p className="font-body mt-2 p-4 self-center text-center text-[#8892B0]  w-80">
         I try to learn constantly and I've enjoyed working with these so far
@@ -71,7 +71,6 @@ const TechStack = () => {
           ))}
         </div>
       </motion.ul>
-     
     </motion.section>
   );
 }

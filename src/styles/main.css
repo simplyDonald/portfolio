@@ -978,6 +978,14 @@ video {
   max-width: 32rem;
 }
 
+.max-w-md{
+  max-width: 28rem;
+}
+
+.max-w-xs{
+  max-width: 20rem;
+}
+
 .flex-shrink-0{
   flex-shrink: 0;
 }
@@ -1291,6 +1299,11 @@ video {
 
 .text-xl{
   font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -1644,6 +1657,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (min-width: 768px){
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .md\:text-\[\#8892B0\]{
     --tw-text-opacity: 1;
     color: rgba(136, 146, 176, var(--tw-text-opacity));
