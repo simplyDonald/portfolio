@@ -43,11 +43,10 @@ const Nav = ({track, toggle}) => {
           <img
             src="compass-new.svg"
             alt="compass logo"
-            className={track ? "hidden" : " w-16 p-2 invert rotate-12"}
+            className={track ? "hidden" : " w-12 p-2 invert rotate-12"}
           />
 
           {/* svg logo */}
-          
         </a>
       </div>
 
@@ -58,7 +57,7 @@ const Nav = ({track, toggle}) => {
         animate="animate"
         onClick={toggle}
       >
-        <Hamburger toggled={track} />
+        <Hamburger toggled={track} size={20} />
       </motion.div>
       <motion.div
         variants={containerVariants}
