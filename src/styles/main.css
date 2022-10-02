@@ -980,6 +980,10 @@ video {
   justify-self: center;
 }
 
+.overflow-x-hidden{
+  overflow-x: hidden;
+}
+
 .rounded{
   border-radius: 0.25rem;
 }
@@ -1340,6 +1344,10 @@ video {
 .scrollbar::-webkit-scrollbar{
   width: 16px;
   height: 16px;
+}
+
+.scrollbar-thin.overflow-x-hidden{
+  overflow-x: hidden;
 }
 
 /* for full page bg-img height */
