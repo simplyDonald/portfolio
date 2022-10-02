@@ -49,7 +49,7 @@ const Footer = () => {
   }
   return (
     <motion.footer
-      className=" text-xs grid justify-items-center font-body"
+      className=" text-xs grid justify-items-center font-body h-max text-white mx-auto  my-6 "
       ref={ref}
       initial="hidden"
       animate={controls}

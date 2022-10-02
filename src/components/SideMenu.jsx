@@ -49,7 +49,7 @@ const SideMenu = ({track, toggle}) => {
           </div>
 
           {/* Social Icons below */}
-          <div className="pr-12">
+          <div className=" pl-4">
             <Socials />
           </div>
         </div>

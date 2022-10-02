@@ -36,15 +36,13 @@ function App() {
         <Projects />
         <TechStack />
         <Contact />
-        <Footer />
       </main>
-       
+      <Footer />
+      
       <div className="hidden fixed bottom-0 lg:block left-4 ">
         <Socials />
       </div>
       <Mail />
-       
-      
       
     </div>
   );

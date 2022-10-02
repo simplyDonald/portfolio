@@ -15,7 +15,7 @@ const NavItems = ({track,toggle,layout}) => {
 
   const navClass = classNames("hover:text-[#64FFDA]", "text-white","px-3","cursor-pointer", {
     "inline-block py-2": `${layout}` === "topNav",
-    "text-4xl block py-4": `${layout}` === "sideMenu"               
+    " text-2xl block py-4": `${layout}` === "sideMenu"               
   });
 
 

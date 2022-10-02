@@ -19,20 +19,20 @@ function Projects() {
           initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          // viewport={{ once: true }}
+          viewport={{ once: true }}
         >
           <img
             src={item.img}
             alt={`screenshot of ${item.name} page`}
-            className="fofo hover:filter-none transition ease-in-out delay-1000"
+            className=" fofo hover:filter-none transition ease-in-out delay-1000"
           />
         </motion.div>
 
         <motion.div
-          className="col-start-3 col-end-11 row-start-1 font-body  grid grid-cols-1 lg:col-start-7 lg:col-end-13 z-10  "
+          className="col-start-3 col-end-11 row-start-1 font-body  grid grid-cols-1 lg:col-start-7 lg:col-end-13 z-10 "
           initial={{ opacity: 0, x: 200 }}
           whileInView={{ opacity: 1, x: 0 }}
-          treansition={{ duration: 1.2, ease:"easeIn" }}
+          treansition={{ duration: 1.2, ease: "easeIn" }}
           // viewport={{ once: true }}
         >
           <h2 className=" mt-2 text-sm text-[#64FFDA] justify-self-end title">
@@ -44,7 +44,7 @@ function Projects() {
           <p className=" leading-4 m-5 bg-[#112240] text-left p-6">
             {item.desc}
           </p>
-          <ul className=" py-6 justify-self-end text-xs text-[#8892B0] mr-4">
+          <ul className=" py-6 justify-self-end text-xs text-[#FFD700] mr-4 md:text-[#8892B0]">
             {item.stack.map((stk) => (
               <li key={stk} className=" inline-block mr-2">
                 {stk}
