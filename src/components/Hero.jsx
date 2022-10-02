@@ -47,12 +47,12 @@ function Hero() {
         >
           <motion.span
             variants={itemVariants}
-            className="text-[#FFD700] text-sm p-5 pl-2"
+            className="text-[#FFD700] text-sm p-5 pl-2 justify-self-center md:justify-self-start"
           >
             Hi, my name is
           </motion.span>
           <motion.p
-            className="text-8xl font-black text-[#6EBD9E] "
+            className="text-4xl md:text-8xl font-black text-[#6EBD9E] justify-self-center md:justify-self-start"
             variants={itemVariants}
           >
             Donald
@@ -63,13 +63,13 @@ function Hero() {
           </motion.p>
           <motion.p
             variants={itemVariants}
-            className="text-white text-3xl pl-2 font-body"
+            className="text-white text-xl md:text-3xl pl-2 font-body justify-self-center md:justify-self-start"
           >
             <span className="italic">FullStack</span>{" "}
             <span className="font-semibold"> Software Developer</span>
           </motion.p>
           <motion.p
-            className="text-[#d8f3dc] text-base pl-2 leading-6 max-w-lg mt-3 font-body"
+            className="text-[#d8f3dc] text-base pl-2 leading-6 max-w-lg mt-3 font-body justify-self-center md:justify-self-start"
             variants={itemVariants}
           >
             I’m a software developer specializing in creating easy-to-use web

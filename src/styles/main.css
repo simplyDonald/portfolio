@@ -966,6 +966,11 @@ video {
   width: 3rem;
 }
 
+.min-w-max{
+  min-width: -webkit-max-content;
+  min-width: max-content;
+}
+
 .max-w-4xl{
   max-width: 56rem;
 }
@@ -1657,9 +1662,23 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (min-width: 768px){
+  .md\:justify-self-start{
+    justify-self: start;
+  }
+
   .md\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-8xl{
+    font-size: 6rem;
+    line-height: 1;
   }
 
   .md\:text-\[\#8892B0\]{
