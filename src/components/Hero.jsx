@@ -40,19 +40,19 @@ function Hero() {
     <section className="text-green-700 bg">
       <div className="grid h-screen items-center justify-center lg:justify-start lg:pl-64 max-w-7xl">
         <motion.div
-          className="grid "
+          className="grid px-5"
           variants={containerVariants}
           initial="initial"
           animate="animate"
         >
           <motion.span
             variants={itemVariants}
-            className="text-[#FFD700] text-sm p-5 pl-2  md:justify-self-start"
+            className="text-[#FFD700] text-sm p-5 pl-2  "
           >
             Hi, my name is
           </motion.span>
           <motion.p
-            className=" mx-auto text-7xl md:text-8xl font-black text-[#6EBD9E]  md:justify-self-start"
+            className=" text-6xl md:text-8xl font-black text-[#6EBD9E]  "
             variants={itemVariants}
           >
             Donald

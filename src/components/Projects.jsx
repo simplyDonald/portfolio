@@ -33,7 +33,7 @@ function Projects() {
           initial={{ opacity: 0, x: 200 }}
           whileInView={{ opacity: 1, x: 0 }}
           treansition={{ duration: 1.2, ease: "easeIn" }}
-          // viewport={{ once: true }}
+          viewport={{ once: true }}
         >
           <h2 className=" mt-2 text-sm text-[#64FFDA] justify-self-end title">
             Featured Project
