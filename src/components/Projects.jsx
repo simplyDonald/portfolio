@@ -1,9 +1,7 @@
 import { techStack } from "techStack";
 import { motion } from "framer-motion";
-import useScroll from "hooks/useScroll";
 
 function Projects() {
-  const {ref, controls, itemVariants} = useScroll();
 
   const projects = techStack.map((item) => {
     return (
