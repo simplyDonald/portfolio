@@ -15,7 +15,7 @@ function Projects() {
         // viewport={{ once: true }}
       >
         <motion.div
-          className="col-start-3 col-end-11 lg:col-start-1 lg:col-end-8 text-center opacity-25 lg:opacity-100 row-span-1 row-start-1 "
+          className="col-start-3 col-end-11 lg:col-start-1 lg:col-end-8 text-center  row-span-1 row-start-1 "
           initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
@@ -24,7 +24,7 @@ function Projects() {
           <img
             src={item.img}
             alt={`screenshot of ${item.name} page`}
-            className=" fofo hover:filter-none transition ease-in-out delay-1000"
+            className=" fofo hover:filter-none transition ease-in-out delay-1000 object-cover opacity-25 lg:opacity-100"
           />
         </motion.div>
 
@@ -44,7 +44,7 @@ function Projects() {
           <p className=" leading-4 m-5 bg-[#112240] text-left p-6">
             {item.desc}
           </p>
-          <ul className=" py-6 justify-self-end text-xs text-[#FFD700] mr-4 md:text-[#8892B0]">
+          <ul className=" py-6 justify-self-end text-xs text-[#8892B0] mr-4 ">
             {item.stack.map((stk) => (
               <li key={stk} className=" inline-block mr-2">
                 {stk}
