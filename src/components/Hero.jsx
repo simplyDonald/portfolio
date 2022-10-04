@@ -36,7 +36,7 @@ function Hero() {
     }
   };
 
-  return (                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+  return (                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
     <section className="text-green-700 bg">
       <div className="grid h-screen items-center justify-center lg:justify-start lg:pl-64 max-w-7xl">
         <motion.div
@@ -47,12 +47,12 @@ function Hero() {
         >
           <motion.span
             variants={itemVariants}
-            className="text-[#FFD700] text-sm p-5 pl-2 justify-self-center md:justify-self-start"
+            className="text-[#FFD700] text-sm p-5 pl-2  md:justify-self-start"
           >
             Hi, my name is
           </motion.span>
           <motion.p
-            className=" mx-auto text-7xl md:text-8xl font-black text-[#6EBD9E] justify-self-center md:justify-self-start"
+            className=" mx-auto text-7xl md:text-8xl font-black text-[#6EBD9E]  md:justify-self-start"
             variants={itemVariants}
           >
             Donald
@@ -63,7 +63,7 @@ function Hero() {
           </motion.p>
           <motion.p
             variants={itemVariants}
-            className="text-white text-3xl md:text-3xl pl-2 font-body justify-self-center md:justify-self-start"
+            className="text-white text-xl md:text-3xl pl-2 font-body  md:justify-self-start"
           >
             <span className="italic">FullStack</span>{" "}
             <span className="font-semibold"> Software Developer</span>
