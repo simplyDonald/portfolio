@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
-import useScroll from "hooks/useScroll";
 
 function About() {
 
-  const {ref, controls, itemVariants} = useScroll();
 
   
 
