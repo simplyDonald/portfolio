@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
-import useScroll from "hooks/useScroll";
 
 function About() {
 
-  const {ref, controls, itemVariants} = useScroll();
 
   
 
@@ -36,7 +34,7 @@ function About() {
             experiencing new things. I'm a firm believer in taking the path less
             travelled and freeing oneself from conformity because ideas roam
             freely when there are no inhibitions. My interest in web development
-            started back in 2017 when my friends and I won a pitch competition
+            started back in 2017 when my friends and I won a pitch competition                                                    
             sponsored by the world bank for a tech based solution in healthcare.
             Fast-forward to today, I've been fortunate to work on some cool and
             challenging projects. I also enjoy exploring insights from data
