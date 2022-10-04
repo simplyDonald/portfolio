@@ -25,6 +25,6 @@ module.exports = {
   },
   plugins: [
     //scrollbar editor
-    require('tailwind-scrollbar')
+    // require('tailwind-scrollbar')
   ],
 }
