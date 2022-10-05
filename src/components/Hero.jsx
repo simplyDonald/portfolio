@@ -36,11 +36,12 @@ function Hero() {
     }
   };
 
-  return (                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+  return (
     <section className="text-green-700 bg">
-      <div className="grid h-screen items-center justify-center lg:justify-start lg:pl-64 max-w-7xl">
+      <div className="grid relative h-screen items-center justify-center lg:justify-start lg:pl-64 max-w-7xl">
+        <div className="absolute inset-0 md:hidden bg-[#0A192F] opacity-70"></div>
         <motion.div
-          className="grid px-5"
+          className="grid px-5 z-10"
           variants={containerVariants}
           initial="initial"
           animate="animate"
