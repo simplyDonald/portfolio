@@ -38,6 +38,7 @@ function Hero() {
 
   return (
     <section className="text-green-700 bg">
+      {/* mobile overlay */}
       <div className="grid relative h-screen items-center justify-center lg:justify-start lg:pl-64 max-w-7xl">
         <div className="absolute inset-0 md:hidden bg-[#0A192F] opacity-70"></div>
         <motion.div
