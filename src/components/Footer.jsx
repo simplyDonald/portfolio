@@ -3,7 +3,6 @@ import useScroll from "hooks/useScroll";
 
 const Footer = () => {
 
-  const { ref, controls} = useScroll();
 
   const svgVariants = {
     hidden: {
@@ -26,7 +25,7 @@ const Footer = () => {
       y: 0,
       transition: {
         type: "tween",
-        duration: 2,
+        duration: 1,
         when: "beforeChildren"
       },
     },
@@ -50,10 +49,10 @@ const Footer = () => {
   return (
     <motion.footer
       className=" text-xs grid justify-items-center font-body h-max text-white mx-auto  my-6 "
-      ref={ref}
-      initial="hidden"
-      animate={controls}
       variants={itemVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
     >
       with
       <span className="hover:text-red-600">
