@@ -14,7 +14,7 @@ function Projects() {
         variants={itemVariants}
         initial="hidden"
         whileInView="visible"
-        // viewport={{ once: true }}
+        viewport={{ once: true }}
       >
         <div
           className="col-start-3 col-end-11 lg:col-start-1 lg:col-end-8 text-center  row-span-1 row-start-1 "
