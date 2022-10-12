@@ -18,14 +18,14 @@ const useScroll = () => {
   const itemVariants = {
       hidden: {
         opacity: 0,
-        // y: 50,
+        y: 20,
       },
       visible: {
         opacity: 1,
-        // y: 0,
+        y: 0,
         transition: {
           type: "tween",
-          duration: 1,
+          duration: .4,
           delay: .3
         },
       },
