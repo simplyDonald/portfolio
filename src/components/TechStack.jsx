@@ -5,7 +5,7 @@ import useScroll from "hooks/useScroll";
 
 
 const TechStack = () => {
-  const { ref, controls, itemVariants } = useScroll();
+  const {  itemVariants } = useScroll();
 
     const containerVariants = {
       initial: {
@@ -43,9 +43,9 @@ const TechStack = () => {
       id="tech"
       className="h-full relative mb-24 flex flex-col z-10"
       variants={itemVariants}
-      ref={ref}
       initial="hidden"
-      animate={controls}
+      whileInView="visible"
+      viewport={{ once: true }}
     >
       <h2 className=" text-xl mt-8 ml-8 text-center md:text-3xl">
         Some of my tools
@@ -56,7 +56,8 @@ const TechStack = () => {
       <motion.ul
         variants={containerVariants}
         initial="initial"
-        animate="animate"
+        whileInView="animate"
+        viewport={{ once: true }}
       >
         <div className=" grid grid-cols-3 gap-0 text-center mt-8 justify-items-center lg:grid-cols-6 w-96 lg:w-auto mx-auto z-10">
           {frameworks.map((item) => (
