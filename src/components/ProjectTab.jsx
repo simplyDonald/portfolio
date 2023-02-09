@@ -11,8 +11,11 @@ const ProjectTab = ({name, link, color, logo, gridstamp}) => {
       <h3 className="font-bold mt-4">{name} clone</h3>
       {/* links */}
       <motion.div className="scale-0 group-hover:scale-100 absolute  bottom-0 right-0 p-2 flex">
-        <ArrowTopRightOnSquareIcon className=" w-5 mb-2 " />
-        <a href={link} rel="noreferrer" className="" target="_blank">
+        <a href={link.external} rel="noreferrer" className="" target="_blank">
+          <ArrowTopRightOnSquareIcon className=" w-5 mb-2 " />
+        </a>
+
+        <a href={link.github} rel="noreferrer" className="" target="_blank">
           <img
             className="invert  w-5 "
             src="github-icon.png"

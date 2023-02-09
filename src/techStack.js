@@ -162,11 +162,11 @@ const items = [
   ];
 
   const projectItems = [
-    { name: "slack", link: "#projects", color: "purple", logo: "projectLogos/slack.png", gridstamp:"row-start-3 row-end-7" },
-    { name: "airbnb", link: "#projects", color: "red", logo: "projectLogos/airbnb.png", gridstamp:"row-start-2 row-end-6" },
-    { name: "amazon", link: "#projects", color: "yellow", logo: "projectLogos/amazon.png", gridstamp:"row-start-1 row-end-7" },
-    { name: "linkedin", link: "#projects", color: "blue", logo: "projectLogos/linkedin.png", gridstamp:"row-start-1 row-end-5" },
-    { name: "snapchat", link: "#projects", color: "yellow", logo: "projectLogos/snapchat.png", gridstamp:"row-start-2 row-end-7" },]
+    { name: "slack", link: {github:"https://github.com/simplyDonald/slack-clone", external: "https://slack-clone-c6db2.web.app/"}, color: "purple", logo: "projectLogos/slack.png", gridstamp:"row-start-3 row-end-7" },
+    { name: "airbnb", link: {github:"https://github.com/simplyDonald/airbnb-clone", external: "https://airbnb-clone-sigma-puce.vercel.app/"}, color: "red", logo: "projectLogos/airbnb.png", gridstamp:"row-start-2 row-end-6" },
+    { name: "amazon", link: {github:"https://github.com/simplyDonald/amazon-clone", external: "https://amazon-clone-c6ff.vercel.app/"}, color: "yellow", logo: "projectLogos/amazon.png", gridstamp:"row-start-1 row-end-7" },
+    { name: "linkedin", link: {github:"https://github.com/simplyDonald/linkedIn-clone", external: "https://linkedin-clone-2ec1c.web.app/"}, color: "blue", logo: "projectLogos/linkedin.png", gridstamp:"row-start-1 row-end-5" },
+    { name: "snapchat", link: {github:"https://github.com/simplyDonald/snapchat-clone", external: "https://snapchat-clone-9fe61.web.app/"}, color: "yellow", logo: "projectLogos/snapchat.png", gridstamp:"row-start-2 row-end-7" },]
 
 
 
