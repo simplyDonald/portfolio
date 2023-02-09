@@ -161,6 +161,13 @@ const items = [
 
   ];
 
+  const projectItems = [
+    { name: "slack", link: "#projects", color: "purple", logo: "projectLogos/slack.png", gridstamp:"row-start-3 row-end-7" },
+    { name: "airbnb", link: "#projects", color: "red", logo: "projectLogos/airbnb.png", gridstamp:"row-start-2 row-end-6" },
+    { name: "amazon", link: "#projects", color: "yellow", logo: "projectLogos/amazon.png", gridstamp:"row-start-1 row-end-7" },
+    { name: "linkedin", link: "#projects", color: "blue", logo: "projectLogos/linkedin.png", gridstamp:"row-start-1 row-end-5" },
+    { name: "snapchat", link: "#projects", color: "yellow", logo: "projectLogos/snapchat.png", gridstamp:"row-start-2 row-end-7" },]
 
 
-export {techStack, frameworks, socials, items}
+
+export {techStack, frameworks, socials, items, projectItems};                               
