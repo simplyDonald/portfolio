@@ -39,6 +39,54 @@ body::-webkit-scrollbar-thumb {
   border-radius: 6px;
   border: 3px solid var(--scrollbarBG);
 }
+/* project card colors */
+.snapchat-bg{
+  background: hsla(60, 99%, 50%, 1);
+
+background: radial-gradient(circle, hsla(60, 99%, 50%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+
+background: -moz-radial-gradient(circle, hsla(60, 99%, 50%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+
+background: -webkit-radial-gradient(circle, hsla(60, 99%, 50%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FEFC01", endColorstr="#1C1554", GradientType=1 );
+}
+
+.linkedin-bg{
+  background: hsla(210, 90%, 40%, 1);
+
+background: linear-gradient(135deg, hsla(210, 90%, 40%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+
+background: -moz-linear-gradient(135deg, hsla(210, 90%, 40%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+
+background: -webkit-linear-gradient(135deg, hsla(210, 90%, 40%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0A66C2", endColorstr="#1C1554", GradientType=1 );
+}
+
+.amazon-bg{
+  background: hsla(48, 96%, 53%, 1);
+
+background: linear-gradient(180deg, hsla(48, 96%, 53%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+
+background: -moz-linear-gradient(180deg, hsla(48, 96%, 53%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+
+background: -webkit-linear-gradient(180deg, hsla(48, 96%, 53%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FACC15", endColorstr="#1C1554", GradientType=1 );
+}
+
+.airbnb-bg {
+  background: hsla(358, 98%, 67%, 1);
+
+background: radial-gradient(circle, hsla(358, 98%, 67%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+
+background: -moz-radial-gradient(circle, hsla(358, 98%, 67%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+
+background: -webkit-radial-gradient(circle, hsla(358, 98%, 67%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FD5B61", endColorstr="#1C1554", GradientType=1 );
+}
 
 .slack-bg{
  background: hsla(299, 62%, 15%, 1);

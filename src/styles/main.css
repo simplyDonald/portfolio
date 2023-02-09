@@ -735,20 +735,16 @@ video {
   grid-row-start: 2;
 }
 
-.row-end-4{
-  grid-row-end: 4;
-}
-
 .row-end-7{
   grid-row-end: 7;
 }
 
-.row-end-5{
-  grid-row-end: 5;
-}
-
 .row-end-6{
   grid-row-end: 6;
+}
+
+.row-end-5{
+  grid-row-end: 5;
 }
 
 .m-8{
@@ -1060,6 +1056,21 @@ video {
 .border-purple-900{
   --tw-border-opacity: 1;
   border-color: rgba(76, 29, 149, var(--tw-border-opacity));
+}
+
+.border-red-500{
+  --tw-border-opacity: 1;
+  border-color: rgba(239, 68, 68, var(--tw-border-opacity));
+}
+
+.border-yellow-500{
+  --tw-border-opacity: 1;
+  border-color: rgba(245, 158, 11, var(--tw-border-opacity));
+}
+
+.border-blue-400{
+  --tw-border-opacity: 1;
+  border-color: rgba(96, 165, 250, var(--tw-border-opacity));
 }
 
 .bg-\[\#0A192F\]{
@@ -1388,6 +1399,36 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid var(--scrollbarBG);
 }
 
+/* project card colors */
+
+.snapchat-bg{
+  background: hsla(60, 99%, 50%, 1);
+  background: radial-gradient(circle, hsla(60, 99%, 50%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+  background: -webkit-radial-gradient(circle, hsla(60, 99%, 50%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FEFC01", endColorstr="#1C1554", GradientType=1 );
+}
+
+.linkedin-bg{
+  background: hsla(210, 90%, 40%, 1);
+  background: linear-gradient(135deg, hsla(210, 90%, 40%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+  background: -webkit-linear-gradient(135deg, hsla(210, 90%, 40%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0A66C2", endColorstr="#1C1554", GradientType=1 );
+}
+
+.amazon-bg{
+  background: hsla(48, 96%, 53%, 1);
+  background: linear-gradient(180deg, hsla(48, 96%, 53%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+  background: -webkit-linear-gradient(180deg, hsla(48, 96%, 53%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FACC15", endColorstr="#1C1554", GradientType=1 );
+}
+
+.airbnb-bg {
+  background: hsla(358, 98%, 67%, 1);
+  background: radial-gradient(circle, hsla(358, 98%, 67%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+  background: -webkit-radial-gradient(circle, hsla(358, 98%, 67%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FD5B61", endColorstr="#1C1554", GradientType=1 );
+}
+
 .slack-bg{
   background: hsla(299, 62%, 15%, 1);
   background: linear-gradient(45deg, hsla(299, 62%, 15%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
@@ -1519,43 +1560,6 @@ body::-webkit-scrollbar-thumb {
 .hover\:animate-pulse:hover{
   -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
           animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@-webkit-keyframes bounce{
-  0%, 100%{
-    -webkit-transform: translateY(-25%);
-            transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50%{
-    -webkit-transform: none;
-            transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-@keyframes bounce{
-  0%, 100%{
-    -webkit-transform: translateY(-25%);
-            transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50%{
-    -webkit-transform: none;
-            transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.hover\:animate-bounce:hover{
-  -webkit-animation: bounce 1s infinite;
-          animation: bounce 1s infinite;
 }
 
 .hover\:cursor-pointer:hover{
