@@ -88,7 +88,7 @@ function Projects() {
           <h3 className="font-bold mt-4">Linkedin Clone</h3>
         </div>
 
-        <div className=" card row-start-2 row-end-7 snapchat-bg">
+        <div className=" card row-start-2 row-end-7 snapchat-bg border-yellow-500">
           <img className=" w-16 " src="projectLogos/snapchat.png" alt="" />
           <h3 className="font-bold mt-4">Snapchat Clone</h3>
         </div>
