@@ -65,11 +65,14 @@ function Projects() {
   });
 
   return (
-    <section id="projects" className="flex flex-col h-screen mb-28 border">
+    <section id="projects" className="flex flex-col h-screen mb-28 ">
       <h2 className="stroke text-xl p-8 md:text-3xl">Some things I've built</h2>
       <div className=" mt-14 border grid grid-cols-5 gap-0  h-[700px] p-16 ">
-        <div className="card">card1</div>
-        <div className=" card">card2</div>
+        <div className="card slack-bg border-purple-900 hover:animate-bounce transition ">
+          <img className=" w-16" src="projectLogos/slack.png" alt="" />
+          <h3 className="font-bold mt-4">Slack Clone</h3>
+        </div>
+        <div className="card">card2</div>
         <div className=" card">card3</div>
         <div className=" card">card4</div>
         <div className=" card">card5</div>

@@ -7,7 +7,7 @@
 
 @layer components {
   .card {
-    @apply w-[150px] h-[500px] border border-red-400 flex items-center justify-center;
+    @apply w-[150px] h-[500px] border  flex flex-col items-center justify-center rounded-lg hover:drop-shadow-3xl;
   }
 }
 
@@ -40,7 +40,17 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid var(--scrollbarBG);
 }
 
+.slack-bg{
+ background: hsla(299, 62%, 15%, 1);
 
+background: linear-gradient(45deg, hsla(299, 62%, 15%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+
+background: -moz-linear-gradient(45deg, hsla(299, 62%, 15%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+
+background: -webkit-linear-gradient(45deg, hsla(299, 62%, 15%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3F0F40", endColorstr="#1C1554", GradientType=1 );
+}
 
 .scroll-hide {
   overflow: hidden;
