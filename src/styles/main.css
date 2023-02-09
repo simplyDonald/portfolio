@@ -2401,6 +2401,7 @@ html{
   justify-content: center;
   border-radius: 0.5rem;
   border-width: 1px;
+  opacity: 0.6;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
@@ -2411,10 +2412,12 @@ html{
 }
 
 .card:hover{
+  z-index: 40;
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   -webkit-transform: var(--tw-transform);
           transform: var(--tw-transform);
+  opacity: 1;
   --tw-drop-shadow: drop-shadow(0 35px 35px rgba(63, 177, 150, 0.25));
   -webkit-filter: var(--tw-filter);
           filter: var(--tw-filter);

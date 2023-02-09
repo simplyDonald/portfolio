@@ -68,22 +68,26 @@ function Projects() {
     <section id="projects" className="flex flex-col h-screen mb-28 ">
       <h2 className="stroke text-xl p-8 md:text-3xl">Some things I've built</h2>
       <div className=" mt-14 grid grid-cols-5 gap-0  h-[700px] p-16 grid-rows-6 grid-flow-col group ">
-        <div className="card slack-bg border-purple-900 row-start-3 row-end-7  ">
+        <div className="card slack-bg border-purple-900 row-start-3 row-end-7">
           <img className=" w-16" src="projectLogos/slack.png" alt="" />
           <h3 className="font-bold mt-4">Slack Clone</h3>
         </div>
+
         <div className="airbnb-bg card row-start-2 row-end-6 border-red-500">
           <img className=" w-16 " src="projectLogos/airbnb.png" alt="" />
           <h3 className="font-bold mt-4">Airbnb Clone</h3>
         </div>
+
         <div className=" card row-start-1 row-end-7 amazon-bg border-yellow-500">
           <img className=" w-16 " src="projectLogos/amazon.png" alt="" />
           <h3 className="font-bold mt-4">Amazon Clone</h3>
         </div>
+
         <div className=" card row-start-1 row-end-5 linkedin-bg border-blue-400">
           <img className=" w-16  " src="projectLogos/linkedin.png" alt="" />
           <h3 className="font-bold mt-4">Linkedin Clone</h3>
         </div>
+
         <div className=" card row-start-2 row-end-7 snapchat-bg">
           <img className=" w-16 " src="projectLogos/snapchat.png" alt="" />
           <h3 className="font-bold mt-4">Snapchat Clone</h3>
