@@ -23,8 +23,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [
-    //scrollbar editor
-    // require('tailwind-scrollbar'),                                           
-  ],
+  plugins: [require('daisyui')],
 }
