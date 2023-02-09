@@ -636,9 +636,20 @@ video {
   justify-content: center;
   border-radius: 0.5rem;
   border-width: 1px;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  -webkit-transform: var(--tw-transform);
+          transform: var(--tw-transform);
   --tw-drop-shadow: drop-shadow(0 35px 35px rgba(63, 177, 150, 0.25));
   -webkit-filter: var(--tw-filter);
           filter: var(--tw-filter);
