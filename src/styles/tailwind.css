@@ -7,7 +7,7 @@
 
 @layer components {
   .card {
-    @apply w-[150px] h-[500px] border  flex flex-col items-center justify-center rounded-lg hover:drop-shadow-3xl;
+    @apply w-[150px]  border  flex flex-col items-center justify-center rounded-lg hover:drop-shadow-3xl cursor-pointer;
   }
 }
 
