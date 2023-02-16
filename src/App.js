@@ -11,6 +11,7 @@ import Footer from 'components/Footer';
 import SideMenu from 'components/SideMenu';
 import Nav from "components/Nav";
 import { AnimatePresence } from "framer-motion";
+import Archive from 'components/Archive';
 
 
 
@@ -35,6 +36,7 @@ function App() {
         <About />
         <Projects />
         <TechStack />
+        <Archive />
         <Contact />
       </main>
       <Footer />

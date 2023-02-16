@@ -2,6 +2,7 @@ import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 import { motion } from "framer-motion";
 
 
+
 const ProjectTab = ({name, link, color, logo, gridstamp}) => {
   return (
     <div
