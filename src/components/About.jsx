@@ -33,12 +33,9 @@ function About() {
             the internet. I have a passion for exploring, learning, and
             experiencing new things. I'm a firm believer in taking the path less
             travelled and freeing oneself from conformity because ideas roam
-            freely when there are no inhibitions. My interest in web development
-            started back in 2017 when my friends and I won a pitch competition                                                    
-            sponsored by the world bank for a tech based solution in healthcare.
-            Fast-forward to today, I've been fortunate to work on some cool and
-            challenging projects. I also enjoy exploring insights from data
-            analytics and blockchain technology. <br />
+            freely when there are no inhibitions. I've been fortunate to work on
+            some cool and challenging projects. I also enjoy exploring insights
+            from data analytics and blockchain technology. <br />
           </p>
           <p>
             Outside work i'm always down for some chess and a cup of tea. I
@@ -52,7 +49,7 @@ function About() {
             viewport={{ once: true }}
             transition={{ duration: 1 }}
             className="fofo hover:filter-none transition ease-out delay-700 hover:cursor-pointer object-cover w-72 h-72"
-            src="gitpicnice.jpg"
+            src="midjourney_pic.png"
             alt="donald_profile_pic"
           />
         </div>
