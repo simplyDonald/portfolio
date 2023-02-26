@@ -134,7 +134,7 @@ const socials = [
   {
     name: "linkedin",
     img: "socialsIcon/linkedin.svg", 
-    link: "https://www.linkedin.com/in/donaldabuah/"  
+    link: ""  
 
   },
   {
@@ -157,7 +157,7 @@ const items = [
     { name: "Projects", link: "#projects" },
     { name: "TechStack", link: "#tech" },
     { name: "Contact", link: "#contact" },
-    { name: "Resume", link: "https://resume.creddle.io/resume/coanj0054zk", target: "blank" }
+    { name: "Resume", link: "", target: "blank" }
 
   ];
 
